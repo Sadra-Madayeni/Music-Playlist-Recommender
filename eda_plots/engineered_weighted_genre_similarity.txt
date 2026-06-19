@@ -1,0 +1,572 @@
+--- ENGINEERED STRICT-RULE WEIGHTED GENRE SIMILARITY (Top 3) ---
+
+Genre: ACOUSTIC
+  -> SINGER-SONGWRITER (Weighted Score: 0.9991)
+  -> SONGWRITER (Weighted Score: 0.9991)
+  -> CANTOPOP (Weighted Score: 0.9935)
+
+Genre: AFROBEAT
+  -> DISCO (Weighted Score: 0.9920)
+  -> TRIP-HOP (Weighted Score: 0.9893)
+  -> SYNTH-POP (Weighted Score: 0.9886)
+
+Genre: ALT-ROCK
+  -> ALTERNATIVE (Weighted Score: 0.9987)
+  -> J-ROCK (Weighted Score: 0.9984)
+  -> PUNK (Weighted Score: 0.9981)
+
+Genre: ALTERNATIVE
+  -> ALT-ROCK (Weighted Score: 0.9987)
+  -> J-ROCK (Weighted Score: 0.9974)
+  -> EDM (Weighted Score: 0.9971)
+
+Genre: AMBIENT
+  -> NEW-AGE (Weighted Score: 0.9953)
+  -> CLASSICAL (Weighted Score: 0.9769)
+  -> PIANO (Weighted Score: 0.9710)
+
+Genre: ANIME
+  -> CLUB (Weighted Score: 0.9932)
+  -> ELECTRONIC (Weighted Score: 0.9919)
+  -> GARAGE (Weighted Score: 0.9913)
+
+Genre: BLACK-METAL
+  -> GRINDCORE (Weighted Score: 0.9971)
+  -> DEATH-METAL (Weighted Score: 0.9965)
+  -> DRUM-AND-BASS (Weighted Score: 0.9779)
+
+Genre: BLUEGRASS
+  -> ROCK-N-ROLL (Weighted Score: 0.9901)
+  -> FOLK (Weighted Score: 0.9889)
+  -> BRITISH (Weighted Score: 0.9875)
+
+Genre: BLUES
+  -> R-N-B (Weighted Score: 0.9971)
+  -> SOUL (Weighted Score: 0.9967)
+  -> SWEDISH (Weighted Score: 0.9966)
+
+Genre: BRAZIL
+  -> TURKISH (Weighted Score: 0.9954)
+  -> R-N-B (Weighted Score: 0.9953)
+  -> SPANISH (Weighted Score: 0.9951)
+
+Genre: BREAKBEAT
+  -> PROGRESSIVE-HOUSE (Weighted Score: 0.9972)
+  -> TRANCE (Weighted Score: 0.9953)
+  -> DRUM-AND-BASS (Weighted Score: 0.9946)
+
+Genre: BRITISH
+  -> GERMAN (Weighted Score: 0.9924)
+  -> PSYCH-ROCK (Weighted Score: 0.9894)
+  -> INDIE (Weighted Score: 0.9890)
+
+Genre: CANTOPOP
+  -> MANDOPOP (Weighted Score: 0.9971)
+  -> SONGWRITER (Weighted Score: 0.9968)
+  -> SINGER-SONGWRITER (Weighted Score: 0.9968)
+
+Genre: CHICAGO-HOUSE
+  -> DETROIT-TECHNO (Weighted Score: 0.9954)
+  -> DEEP-HOUSE (Weighted Score: 0.9944)
+  -> TECHNO (Weighted Score: 0.9921)
+
+Genre: CHILDREN
+  -> SOUL (Weighted Score: 0.9891)
+  -> FOLK (Weighted Score: 0.9877)
+  -> INDIAN (Weighted Score: 0.9876)
+
+Genre: CHILL
+  -> SAD (Weighted Score: 0.9972)
+  -> ACOUSTIC (Weighted Score: 0.9830)
+  -> SONGWRITER (Weighted Score: 0.9830)
+
+Genre: CLASSICAL
+  -> NEW-AGE (Weighted Score: 0.9853)
+  -> AMBIENT (Weighted Score: 0.9769)
+  -> GUITAR (Weighted Score: 0.9647)
+
+Genre: CLUB
+  -> ELECTRONIC (Weighted Score: 0.9972)
+  -> TECHNO (Weighted Score: 0.9933)
+  -> ANIME (Weighted Score: 0.9932)
+
+Genre: COMEDY
+  -> SHOW-TUNES (Weighted Score: 0.8314)
+  -> FUNK (Weighted Score: 0.7878)
+  -> CHILDREN (Weighted Score: 0.7807)
+
+Genre: COUNTRY
+  -> SWEDISH (Weighted Score: 0.9984)
+  -> J-POP (Weighted Score: 0.9965)
+  -> POP (Weighted Score: 0.9960)
+
+Genre: DANCE
+  -> LATIN (Weighted Score: 0.9982)
+  -> HOUSE (Weighted Score: 0.9981)
+  -> LATINO (Weighted Score: 0.9980)
+
+Genre: DANCEHALL
+  -> HIP-HOP (Weighted Score: 0.9978)
+  -> REGGAE (Weighted Score: 0.9976)
+  -> REGGAETON (Weighted Score: 0.9976)
+
+Genre: DEATH-METAL
+  -> BLACK-METAL (Weighted Score: 0.9965)
+  -> GRINDCORE (Weighted Score: 0.9949)
+  -> METALCORE (Weighted Score: 0.9944)
+
+Genre: DEEP-HOUSE
+  -> ELECTRONIC (Weighted Score: 0.9967)
+  -> CHICAGO-HOUSE (Weighted Score: 0.9944)
+  -> PROGRESSIVE-HOUSE (Weighted Score: 0.9943)
+
+Genre: DETROIT-TECHNO
+  -> MINIMAL-TECHNO (Weighted Score: 0.9964)
+  -> TECHNO (Weighted Score: 0.9960)
+  -> CHICAGO-HOUSE (Weighted Score: 0.9954)
+
+Genre: DISCO
+  -> SYNTH-POP (Weighted Score: 0.9987)
+  -> LATIN (Weighted Score: 0.9959)
+  -> HOUSE (Weighted Score: 0.9951)
+
+Genre: DISNEY
+  -> GUITAR (Weighted Score: 0.9943)
+  -> PIANO (Weighted Score: 0.9902)
+  -> TANGO (Weighted Score: 0.9763)
+
+Genre: DRUM-AND-BASS
+  -> HAPPY (Weighted Score: 0.9984)
+  -> TRANCE (Weighted Score: 0.9976)
+  -> HARDSTYLE (Weighted Score: 0.9965)
+
+Genre: DUB
+  -> GROOVE (Weighted Score: 0.9970)
+  -> EDM (Weighted Score: 0.9964)
+  -> DUBSTEP (Weighted Score: 0.9956)
+
+Genre: DUBSTEP
+  -> HARDSTYLE (Weighted Score: 0.9973)
+  -> HAPPY (Weighted Score: 0.9958)
+  -> DUB (Weighted Score: 0.9956)
+
+Genre: EDM
+  -> HOUSE (Weighted Score: 0.9998)
+  -> ALTERNATIVE (Weighted Score: 0.9971)
+  -> DANCE (Weighted Score: 0.9970)
+
+Genre: ELECTRO
+  -> EMO (Weighted Score: 0.9980)
+  -> K-POP (Weighted Score: 0.9969)
+  -> HIP-HOP (Weighted Score: 0.9963)
+
+Genre: ELECTRONIC
+  -> CLUB (Weighted Score: 0.9972)
+  -> DEEP-HOUSE (Weighted Score: 0.9967)
+  -> TRIP-HOP (Weighted Score: 0.9945)
+
+Genre: EMO
+  -> ELECTRO (Weighted Score: 0.9980)
+  -> DUB (Weighted Score: 0.9951)
+  -> ALTERNATIVE (Weighted Score: 0.9950)
+
+Genre: FOLK
+  -> INDIAN (Weighted Score: 0.9990)
+  -> SOUL (Weighted Score: 0.9971)
+  -> INDIE (Weighted Score: 0.9968)
+
+Genre: FORRO
+  -> SALSA (Weighted Score: 0.9945)
+  -> SERTANEJO (Weighted Score: 0.9942)
+  -> R-N-B (Weighted Score: 0.9925)
+
+Genre: FRENCH
+  -> TURKISH (Weighted Score: 0.9932)
+  -> INDIE (Weighted Score: 0.9926)
+  -> INDIE-POP (Weighted Score: 0.9922)
+
+Genre: FUNK
+  -> DANCEHALL (Weighted Score: 0.9965)
+  -> K-POP (Weighted Score: 0.9964)
+  -> KIDS (Weighted Score: 0.9957)
+
+Genre: GARAGE
+  -> GOTH (Weighted Score: 0.9979)
+  -> GROOVE (Weighted Score: 0.9944)
+  -> ALT-ROCK (Weighted Score: 0.9941)
+
+Genre: GERMAN
+  -> BRITISH (Weighted Score: 0.9924)
+  -> ANIME (Weighted Score: 0.9910)
+  -> FRENCH (Weighted Score: 0.9902)
+
+Genre: GOSPEL
+  -> BRAZIL (Weighted Score: 0.9898)
+  -> MANDOPOP (Weighted Score: 0.9853)
+  -> MPB (Weighted Score: 0.9845)
+
+Genre: GOTH
+  -> GARAGE (Weighted Score: 0.9979)
+  -> GROOVE (Weighted Score: 0.9967)
+  -> ALT-ROCK (Weighted Score: 0.9961)
+
+Genre: GRINDCORE
+  -> BLACK-METAL (Weighted Score: 0.9971)
+  -> DEATH-METAL (Weighted Score: 0.9949)
+  -> METALCORE (Weighted Score: 0.9713)
+
+Genre: GROOVE
+  -> DUB (Weighted Score: 0.9970)
+  -> GOTH (Weighted Score: 0.9967)
+  -> PROGRESSIVE-HOUSE (Weighted Score: 0.9966)
+
+Genre: GRUNGE
+  -> METAL (Weighted Score: 0.9994)
+  -> HEAVY-METAL (Weighted Score: 0.9971)
+  -> HARD-ROCK (Weighted Score: 0.9965)
+
+Genre: GUITAR
+  -> DISNEY (Weighted Score: 0.9943)
+  -> PIANO (Weighted Score: 0.9883)
+  -> TANGO (Weighted Score: 0.9705)
+
+Genre: HAPPY
+  -> HARDSTYLE (Weighted Score: 0.9990)
+  -> DRUM-AND-BASS (Weighted Score: 0.9984)
+  -> TRANCE (Weighted Score: 0.9960)
+
+Genre: HARD-ROCK
+  -> PUNK (Weighted Score: 0.9995)
+  -> PUNK-ROCK (Weighted Score: 0.9994)
+  -> POWER-POP (Weighted Score: 0.9982)
+
+Genre: HARDCORE
+  -> HARD-ROCK (Weighted Score: 0.9961)
+  -> INDUSTRIAL (Weighted Score: 0.9957)
+  -> METAL (Weighted Score: 0.9949)
+
+Genre: HARDSTYLE
+  -> HAPPY (Weighted Score: 0.9990)
+  -> DUBSTEP (Weighted Score: 0.9973)
+  -> INDUSTRIAL (Weighted Score: 0.9966)
+
+Genre: HEAVY-METAL
+  -> METAL (Weighted Score: 0.9983)
+  -> METALCORE (Weighted Score: 0.9983)
+  -> GRUNGE (Weighted Score: 0.9971)
+
+Genre: HIP-HOP
+  -> LATINO (Weighted Score: 0.9987)
+  -> REGGAE (Weighted Score: 0.9984)
+  -> REGGAETON (Weighted Score: 0.9982)
+
+Genre: HONKY-TONK
+  -> JAZZ (Weighted Score: 0.9951)
+  -> TANGO (Weighted Score: 0.9861)
+  -> ACOUSTIC (Weighted Score: 0.9803)
+
+Genre: HOUSE
+  -> EDM (Weighted Score: 0.9998)
+  -> DANCE (Weighted Score: 0.9981)
+  -> SYNTH-POP (Weighted Score: 0.9968)
+
+Genre: IDM
+  -> STUDY (Weighted Score: 0.9714)
+  -> IRANIAN (Weighted Score: 0.9686)
+  -> TRIP-HOP (Weighted Score: 0.9678)
+
+Genre: INDIAN
+  -> FOLK (Weighted Score: 0.9990)
+  -> POP-FILM (Weighted Score: 0.9967)
+  -> SOUL (Weighted Score: 0.9967)
+
+Genre: INDIE
+  -> INDIE-POP (Weighted Score: 0.9998)
+  -> TURKISH (Weighted Score: 0.9972)
+  -> SOUL (Weighted Score: 0.9969)
+
+Genre: INDIE-POP
+  -> INDIE (Weighted Score: 0.9998)
+  -> TURKISH (Weighted Score: 0.9979)
+  -> POP (Weighted Score: 0.9976)
+
+Genre: INDUSTRIAL
+  -> METAL (Weighted Score: 0.9968)
+  -> HARDSTYLE (Weighted Score: 0.9966)
+  -> HAPPY (Weighted Score: 0.9957)
+
+Genre: IRANIAN
+  -> IDM (Weighted Score: 0.9686)
+  -> GERMAN (Weighted Score: 0.9279)
+  -> PIANO (Weighted Score: 0.9209)
+
+Genre: J-DANCE
+  -> DANCEHALL (Weighted Score: 0.9974)
+  -> HIP-HOP (Weighted Score: 0.9958)
+  -> FUNK (Weighted Score: 0.9951)
+
+Genre: J-IDOL
+  -> J-ROCK (Weighted Score: 0.9984)
+  -> PUNK (Weighted Score: 0.9977)
+  -> PUNK-ROCK (Weighted Score: 0.9975)
+
+Genre: J-POP
+  -> SPANISH (Weighted Score: 0.9976)
+  -> ROCK (Weighted Score: 0.9976)
+  -> SWEDISH (Weighted Score: 0.9969)
+
+Genre: J-ROCK
+  -> ALT-ROCK (Weighted Score: 0.9984)
+  -> J-IDOL (Weighted Score: 0.9984)
+  -> PUNK (Weighted Score: 0.9976)
+
+Genre: JAZZ
+  -> HONKY-TONK (Weighted Score: 0.9951)
+  -> TANGO (Weighted Score: 0.9912)
+  -> SHOW-TUNES (Weighted Score: 0.9890)
+
+Genre: K-POP
+  -> SPANISH (Weighted Score: 0.9982)
+  -> SWEDISH (Weighted Score: 0.9978)
+  -> POP (Weighted Score: 0.9976)
+
+Genre: KIDS
+  -> FUNK (Weighted Score: 0.9957)
+  -> DANCEHALL (Weighted Score: 0.9945)
+  -> HIP-HOP (Weighted Score: 0.9939)
+
+Genre: LATIN
+  -> LATINO (Weighted Score: 0.9996)
+  -> REGGAE (Weighted Score: 0.9995)
+  -> REGGAETON (Weighted Score: 0.9994)
+
+Genre: LATINO
+  -> REGGAETON (Weighted Score: 0.9999)
+  -> REGGAE (Weighted Score: 0.9998)
+  -> LATIN (Weighted Score: 0.9996)
+
+Genre: MALAY
+  -> SOUL (Weighted Score: 0.9990)
+  -> POP (Weighted Score: 0.9983)
+  -> POP-FILM (Weighted Score: 0.9982)
+
+Genre: MANDOPOP
+  -> CANTOPOP (Weighted Score: 0.9971)
+  -> SONGWRITER (Weighted Score: 0.9933)
+  -> SINGER-SONGWRITER (Weighted Score: 0.9933)
+
+Genre: METAL
+  -> GRUNGE (Weighted Score: 0.9994)
+  -> HEAVY-METAL (Weighted Score: 0.9983)
+  -> INDUSTRIAL (Weighted Score: 0.9968)
+
+Genre: METALCORE
+  -> HEAVY-METAL (Weighted Score: 0.9983)
+  -> METAL (Weighted Score: 0.9958)
+  -> DEATH-METAL (Weighted Score: 0.9944)
+
+Genre: MINIMAL-TECHNO
+  -> DETROIT-TECHNO (Weighted Score: 0.9964)
+  -> TECHNO (Weighted Score: 0.9945)
+  -> CHICAGO-HOUSE (Weighted Score: 0.9858)
+
+Genre: MPB
+  -> R-N-B (Weighted Score: 0.9965)
+  -> SOUL (Weighted Score: 0.9950)
+  -> BLUES (Weighted Score: 0.9942)
+
+Genre: NEW-AGE
+  -> AMBIENT (Weighted Score: 0.9953)
+  -> CLASSICAL (Weighted Score: 0.9853)
+  -> PIANO (Weighted Score: 0.9577)
+
+Genre: OPERA
+  -> ROMANCE (Weighted Score: 0.9767)
+  -> DISNEY (Weighted Score: 0.9658)
+  -> TANGO (Weighted Score: 0.9534)
+
+Genre: PAGODE
+  -> SAMBA (Weighted Score: 0.9983)
+  -> SERTANEJO (Weighted Score: 0.9967)
+  -> FORRO (Weighted Score: 0.9898)
+
+Genre: PARTY
+  -> SKA (Weighted Score: 0.9974)
+  -> J-IDOL (Weighted Score: 0.9940)
+  -> PUNK-ROCK (Weighted Score: 0.9933)
+
+Genre: PIANO
+  -> DISNEY (Weighted Score: 0.9902)
+  -> GUITAR (Weighted Score: 0.9883)
+  -> AMBIENT (Weighted Score: 0.9710)
+
+Genre: POP
+  -> MALAY (Weighted Score: 0.9983)
+  -> TURKISH (Weighted Score: 0.9982)
+  -> INDIE-POP (Weighted Score: 0.9976)
+
+Genre: POP-FILM
+  -> MALAY (Weighted Score: 0.9982)
+  -> SOUL (Weighted Score: 0.9980)
+  -> INDIAN (Weighted Score: 0.9967)
+
+Genre: POWER-POP
+  -> PUNK (Weighted Score: 0.9990)
+  -> PUNK-ROCK (Weighted Score: 0.9989)
+  -> HARD-ROCK (Weighted Score: 0.9982)
+
+Genre: PROGRESSIVE-HOUSE
+  -> BREAKBEAT (Weighted Score: 0.9972)
+  -> GROOVE (Weighted Score: 0.9966)
+  -> TRANCE (Weighted Score: 0.9957)
+
+Genre: PSYCH-ROCK
+  -> BLUES (Weighted Score: 0.9946)
+  -> SWEDISH (Weighted Score: 0.9933)
+  -> INDIE (Weighted Score: 0.9921)
+
+Genre: PUNK
+  -> PUNK-ROCK (Weighted Score: 0.9999)
+  -> HARD-ROCK (Weighted Score: 0.9995)
+  -> POWER-POP (Weighted Score: 0.9990)
+
+Genre: PUNK-ROCK
+  -> PUNK (Weighted Score: 0.9999)
+  -> HARD-ROCK (Weighted Score: 0.9994)
+  -> POWER-POP (Weighted Score: 0.9989)
+
+Genre: R-N-B
+  -> BLUES (Weighted Score: 0.9971)
+  -> MPB (Weighted Score: 0.9965)
+  -> SWEDISH (Weighted Score: 0.9962)
+
+Genre: REGGAE
+  -> REGGAETON (Weighted Score: 0.9999)
+  -> LATINO (Weighted Score: 0.9998)
+  -> LATIN (Weighted Score: 0.9995)
+
+Genre: REGGAETON
+  -> LATINO (Weighted Score: 0.9999)
+  -> REGGAE (Weighted Score: 0.9999)
+  -> LATIN (Weighted Score: 0.9994)
+
+Genre: ROCK
+  -> J-POP (Weighted Score: 0.9976)
+  -> ALTERNATIVE (Weighted Score: 0.9971)
+  -> SPANISH (Weighted Score: 0.9964)
+
+Genre: ROCK-N-ROLL
+  -> FOLK (Weighted Score: 0.9909)
+  -> ROCKABILLY (Weighted Score: 0.9901)
+  -> BLUEGRASS (Weighted Score: 0.9901)
+
+Genre: ROCKABILLY
+  -> BLUES (Weighted Score: 0.9960)
+  -> R-N-B (Weighted Score: 0.9943)
+  -> SALSA (Weighted Score: 0.9930)
+
+Genre: ROMANCE
+  -> TANGO (Weighted Score: 0.9865)
+  -> JAZZ (Weighted Score: 0.9768)
+  -> OPERA (Weighted Score: 0.9767)
+
+Genre: SAD
+  -> CHILL (Weighted Score: 0.9972)
+  -> SINGER-SONGWRITER (Weighted Score: 0.9873)
+  -> SONGWRITER (Weighted Score: 0.9873)
+
+Genre: SALSA
+  -> FORRO (Weighted Score: 0.9945)
+  -> ROCKABILLY (Weighted Score: 0.9930)
+  -> SAMBA (Weighted Score: 0.9888)
+
+Genre: SAMBA
+  -> PAGODE (Weighted Score: 0.9983)
+  -> SERTANEJO (Weighted Score: 0.9967)
+  -> MPB (Weighted Score: 0.9918)
+
+Genre: SERTANEJO
+  -> PAGODE (Weighted Score: 0.9967)
+  -> SAMBA (Weighted Score: 0.9967)
+  -> FORRO (Weighted Score: 0.9942)
+
+Genre: SHOW-TUNES
+  -> JAZZ (Weighted Score: 0.9890)
+  -> SONGWRITER (Weighted Score: 0.9865)
+  -> SINGER-SONGWRITER (Weighted Score: 0.9865)
+
+Genre: SINGER-SONGWRITER
+  -> SONGWRITER (Weighted Score: 1.0000)
+  -> ACOUSTIC (Weighted Score: 0.9991)
+  -> CANTOPOP (Weighted Score: 0.9968)
+
+Genre: SKA
+  -> PARTY (Weighted Score: 0.9974)
+  -> J-ROCK (Weighted Score: 0.9958)
+  -> ALT-ROCK (Weighted Score: 0.9957)
+
+Genre: SLEEP
+  -> NEW-AGE (Weighted Score: 0.9317)
+  -> AMBIENT (Weighted Score: 0.9058)
+  -> IRANIAN (Weighted Score: 0.8829)
+
+Genre: SONGWRITER
+  -> SINGER-SONGWRITER (Weighted Score: 1.0000)
+  -> ACOUSTIC (Weighted Score: 0.9991)
+  -> CANTOPOP (Weighted Score: 0.9968)
+
+Genre: SOUL
+  -> MALAY (Weighted Score: 0.9990)
+  -> POP-FILM (Weighted Score: 0.9980)
+  -> INDIE-POP (Weighted Score: 0.9973)
+
+Genre: SPANISH
+  -> K-POP (Weighted Score: 0.9982)
+  -> J-POP (Weighted Score: 0.9976)
+  -> ROCK (Weighted Score: 0.9964)
+
+Genre: STUDY
+  -> IDM (Weighted Score: 0.9714)
+  -> PIANO (Weighted Score: 0.9641)
+  -> GUITAR (Weighted Score: 0.9638)
+
+Genre: SWEDISH
+  -> COUNTRY (Weighted Score: 0.9984)
+  -> K-POP (Weighted Score: 0.9978)
+  -> POP (Weighted Score: 0.9974)
+
+Genre: SYNTH-POP
+  -> DISCO (Weighted Score: 0.9987)
+  -> HOUSE (Weighted Score: 0.9968)
+  -> ALTERNATIVE (Weighted Score: 0.9963)
+
+Genre: TANGO
+  -> JAZZ (Weighted Score: 0.9912)
+  -> ROMANCE (Weighted Score: 0.9865)
+  -> HONKY-TONK (Weighted Score: 0.9861)
+
+Genre: TECHNO
+  -> DETROIT-TECHNO (Weighted Score: 0.9960)
+  -> MINIMAL-TECHNO (Weighted Score: 0.9945)
+  -> CLUB (Weighted Score: 0.9933)
+
+Genre: TRANCE
+  -> DRUM-AND-BASS (Weighted Score: 0.9976)
+  -> HAPPY (Weighted Score: 0.9960)
+  -> PROGRESSIVE-HOUSE (Weighted Score: 0.9957)
+
+Genre: TRIP-HOP
+  -> ELECTRONIC (Weighted Score: 0.9945)
+  -> CLUB (Weighted Score: 0.9920)
+  -> ANIME (Weighted Score: 0.9910)
+
+Genre: TURKISH
+  -> POP (Weighted Score: 0.9982)
+  -> INDIE-POP (Weighted Score: 0.9979)
+  -> INDIE (Weighted Score: 0.9972)
+
+Genre: WORLD-MUSIC
+  -> GOSPEL (Weighted Score: 0.9801)
+  -> ANIME (Weighted Score: 0.9764)
+  -> GOTH (Weighted Score: 0.9754)
+

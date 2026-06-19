@@ -1,0 +1,1087 @@
+--- ENGINEERED GENRE STRICT RULES ---
+
+Genre: ACOUSTIC
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.027 (Average = 0.04)
+ - liveness: std = 0.105 (Average = 0.15)
+ - groove_index: std = 0.113 (Average = 0.39)
+ - tempo: std = 0.122 (Average = 0.49)
+ - danceability: std = 0.124 (Average = 0.55)
+
+Genre: AFROBEAT
+ - is_spoken_word: std = 0.045 (Average = 0.00)
+ - speechiness: std = 0.090 (Average = 0.09)
+ - tempo: std = 0.108 (Average = 0.49)
+ - groove_index: std = 0.122 (Average = 0.47)
+ - danceability: std = 0.126 (Average = 0.67)
+
+Genre: ALT-ROCK
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.038 (Average = 0.06)
+ - groove_index: std = 0.115 (Average = 0.39)
+ - is_strictly_acoustic: std = 0.118 (Average = 0.01)
+ - tempo: std = 0.120 (Average = 0.51)
+ - danceability: std = 0.136 (Average = 0.53)
+
+Genre: ALTERNATIVE
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.061 (Average = 0.07)
+ - groove_index: std = 0.125 (Average = 0.40)
+ - tempo: std = 0.125 (Average = 0.50)
+ - instrumentalness: std = 0.129 (Average = 0.04)
+ - danceability: std = 0.149 (Average = 0.56)
+
+Genre: AMBIENT
+ - speechiness: std = 0.031 (Average = 0.04)
+ - is_spoken_word: std = 0.032 (Average = 0.00)
+ - euphoria_index: std = 0.076 (Average = 0.04)
+ - liveness: std = 0.097 (Average = 0.13)
+ - tempo: std = 0.132 (Average = 0.46)
+ - groove_index: std = 0.138 (Average = 0.25)
+ - valence: std = 0.144 (Average = 0.17)
+
+Genre: ANIME
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.087 (Average = 0.09)
+ - tempo: std = 0.136 (Average = 0.51)
+ - groove_index: std = 0.143 (Average = 0.39)
+
+Genre: BLACK-METAL
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.053 (Average = 0.09)
+ - groove_index: std = 0.103 (Average = 0.22)
+ - is_strictly_acoustic: std = 0.118 (Average = 0.01)
+ - tempo: std = 0.123 (Average = 0.53)
+ - acousticness: std = 0.129 (Average = 0.03)
+ - euphoria_index: std = 0.130 (Average = 0.16)
+ - danceability: std = 0.132 (Average = 0.30)
+ - intensity_index: std = 0.145 (Average = 0.70)
+
+Genre: BLUEGRASS
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.024 (Average = 0.04)
+ - groove_index: std = 0.091 (Average = 0.40)
+ - danceability: std = 0.107 (Average = 0.53)
+ - tempo: std = 0.109 (Average = 0.52)
+
+Genre: BLUES
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.060 (Average = 0.06)
+ - instrumentalness: std = 0.125 (Average = 0.03)
+ - tempo: std = 0.126 (Average = 0.48)
+ - groove_index: std = 0.132 (Average = 0.39)
+ - liveness: std = 0.141 (Average = 0.19)
+ - danceability: std = 0.150 (Average = 0.57)
+
+Genre: BRAZIL
+ - is_spoken_word: std = 0.045 (Average = 0.00)
+ - instrumentalness: std = 0.083 (Average = 0.01)
+ - is_pure_instrumental: std = 0.104 (Average = 0.01)
+ - tempo: std = 0.115 (Average = 0.50)
+ - speechiness: std = 0.120 (Average = 0.10)
+ - groove_index: std = 0.135 (Average = 0.40)
+
+Genre: BREAKBEAT
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - acousticness: std = 0.070 (Average = 0.03)
+ - speechiness: std = 0.075 (Average = 0.09)
+ - tempo: std = 0.103 (Average = 0.55)
+ - groove_index: std = 0.117 (Average = 0.51)
+ - danceability: std = 0.122 (Average = 0.65)
+ - energy: std = 0.125 (Average = 0.85)
+ - intensity_index: std = 0.128 (Average = 0.69)
+ - electronic_index: std = 0.143 (Average = 0.83)
+
+Genre: BRITISH
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.039 (Average = 0.05)
+ - tempo: std = 0.121 (Average = 0.49)
+ - groove_index: std = 0.140 (Average = 0.35)
+ - liveness: std = 0.144 (Average = 0.17)
+
+Genre: CANTOPOP
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_pure_instrumental: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.025 (Average = 0.04)
+ - instrumentalness: std = 0.056 (Average = 0.01)
+ - groove_index: std = 0.106 (Average = 0.40)
+ - danceability: std = 0.114 (Average = 0.55)
+ - tempo: std = 0.118 (Average = 0.51)
+ - euphoria_index: std = 0.124 (Average = 0.17)
+ - intensity_index: std = 0.141 (Average = 0.35)
+
+Genre: CHICAGO-HOUSE
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - tempo: std = 0.045 (Average = 0.51)
+ - speechiness: std = 0.057 (Average = 0.07)
+ - acousticness: std = 0.074 (Average = 0.04)
+ - groove_index: std = 0.075 (Average = 0.57)
+ - danceability: std = 0.086 (Average = 0.77)
+ - liveness: std = 0.126 (Average = 0.14)
+ - intensity_index: std = 0.149 (Average = 0.56)
+
+Genre: CHILDREN
+ - is_spoken_word: std = 0.100 (Average = 0.01)
+ - tempo: std = 0.123 (Average = 0.51)
+ - speechiness: std = 0.128 (Average = 0.09)
+
+Genre: CHILL
+ - is_spoken_word: std = 0.063 (Average = 0.00)
+ - speechiness: std = 0.109 (Average = 0.10)
+ - tempo: std = 0.119 (Average = 0.47)
+ - liveness: std = 0.123 (Average = 0.17)
+ - danceability: std = 0.132 (Average = 0.66)
+ - euphoria_index: std = 0.135 (Average = 0.16)
+ - groove_index: std = 0.137 (Average = 0.46)
+
+Genre: CLASSICAL
+ - is_spoken_word: std = 0.033 (Average = 0.00)
+ - speechiness: std = 0.048 (Average = 0.05)
+ - electronic_index: std = 0.096 (Average = 0.03)
+ - is_strictly_synthetic: std = 0.098 (Average = 0.01)
+ - euphoria_index: std = 0.106 (Average = 0.07)
+ - groove_index: std = 0.122 (Average = 0.25)
+ - tempo: std = 0.127 (Average = 0.44)
+ - liveness: std = 0.128 (Average = 0.17)
+ - intensity_index: std = 0.143 (Average = 0.13)
+ - acousticness: std = 0.147 (Average = 0.92)
+ - danceability: std = 0.148 (Average = 0.38)
+
+Genre: CLUB
+ - is_spoken_word: std = 0.045 (Average = 0.00)
+ - speechiness: std = 0.107 (Average = 0.09)
+ - tempo: std = 0.107 (Average = 0.51)
+ - groove_index: std = 0.147 (Average = 0.44)
+
+Genre: COMEDY
+ - is_pure_instrumental: std = 0.000 (Average = 0.00)
+ - instrumentalness: std = 0.009 (Average = 0.00)
+ - danceability: std = 0.108 (Average = 0.58)
+ - tempo: std = 0.117 (Average = 0.41)
+ - groove_index: std = 0.125 (Average = 0.35)
+
+Genre: COUNTRY
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.029 (Average = 0.04)
+ - instrumentalness: std = 0.043 (Average = 0.01)
+ - is_pure_instrumental: std = 0.045 (Average = 0.00)
+ - groove_index: std = 0.122 (Average = 0.41)
+ - danceability: std = 0.126 (Average = 0.56)
+ - tempo: std = 0.130 (Average = 0.51)
+ - liveness: std = 0.142 (Average = 0.18)
+
+Genre: DANCE
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.032 (Average = 0.00)
+ - instrumentalness: std = 0.069 (Average = 0.01)
+ - speechiness: std = 0.075 (Average = 0.09)
+ - is_pure_instrumental: std = 0.079 (Average = 0.01)
+ - tempo: std = 0.104 (Average = 0.49)
+ - groove_index: std = 0.110 (Average = 0.49)
+ - danceability: std = 0.117 (Average = 0.69)
+ - liveness: std = 0.122 (Average = 0.17)
+ - intensity_index: std = 0.126 (Average = 0.59)
+ - energy: std = 0.136 (Average = 0.71)
+
+Genre: DANCEHALL
+ - is_pure_instrumental: std = 0.032 (Average = 0.00)
+ - instrumentalness: std = 0.043 (Average = 0.01)
+ - is_spoken_word: std = 0.045 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.071 (Average = 0.01)
+ - liveness: std = 0.116 (Average = 0.16)
+ - danceability: std = 0.118 (Average = 0.73)
+ - tempo: std = 0.120 (Average = 0.46)
+ - intensity_index: std = 0.127 (Average = 0.56)
+ - groove_index: std = 0.128 (Average = 0.49)
+ - speechiness: std = 0.131 (Average = 0.19)
+ - energy: std = 0.134 (Average = 0.69)
+
+Genre: DEATH-METAL
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - acousticness: std = 0.042 (Average = 0.01)
+ - speechiness: std = 0.065 (Average = 0.11)
+ - is_strictly_synthetic: std = 0.089 (Average = 0.99)
+ - energy: std = 0.092 (Average = 0.93)
+ - intensity_index: std = 0.096 (Average = 0.77)
+ - groove_index: std = 0.098 (Average = 0.27)
+ - electronic_index: std = 0.101 (Average = 0.93)
+ - danceability: std = 0.119 (Average = 0.37)
+ - tempo: std = 0.119 (Average = 0.51)
+ - euphoria_index: std = 0.136 (Average = 0.22)
+
+Genre: DEEP-HOUSE
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.042 (Average = 0.06)
+ - tempo: std = 0.049 (Average = 0.50)
+ - groove_index: std = 0.078 (Average = 0.51)
+ - danceability: std = 0.094 (Average = 0.71)
+ - intensity_index: std = 0.130 (Average = 0.59)
+ - liveness: std = 0.137 (Average = 0.17)
+ - acousticness: std = 0.139 (Average = 0.10)
+ - energy: std = 0.140 (Average = 0.74)
+
+Genre: DETROIT-TECHNO
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.032 (Average = 0.00)
+ - tempo: std = 0.042 (Average = 0.52)
+ - speechiness: std = 0.053 (Average = 0.07)
+ - groove_index: std = 0.087 (Average = 0.54)
+ - danceability: std = 0.109 (Average = 0.72)
+ - acousticness: std = 0.131 (Average = 0.07)
+
+Genre: DISCO
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.049 (Average = 0.06)
+ - is_strictly_acoustic: std = 0.063 (Average = 0.00)
+ - tempo: std = 0.079 (Average = 0.50)
+ - groove_index: std = 0.111 (Average = 0.49)
+ - danceability: std = 0.125 (Average = 0.68)
+
+Genre: DISNEY
+ - is_spoken_word: std = 0.032 (Average = 0.00)
+ - speechiness: std = 0.089 (Average = 0.07)
+ - liveness: std = 0.124 (Average = 0.17)
+ - tempo: std = 0.132 (Average = 0.46)
+
+Genre: DRUM-AND-BASS
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - is_spoken_word: std = 0.032 (Average = 0.00)
+ - acousticness: std = 0.061 (Average = 0.03)
+ - speechiness: std = 0.085 (Average = 0.09)
+ - energy: std = 0.105 (Average = 0.88)
+ - intensity_index: std = 0.111 (Average = 0.74)
+ - danceability: std = 0.121 (Average = 0.54)
+ - electronic_index: std = 0.122 (Average = 0.86)
+ - tempo: std = 0.130 (Average = 0.64)
+ - groove_index: std = 0.132 (Average = 0.49)
+
+Genre: DUB
+ - is_spoken_word: std = 0.045 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.083 (Average = 0.01)
+ - speechiness: std = 0.096 (Average = 0.10)
+ - tempo: std = 0.122 (Average = 0.53)
+ - groove_index: std = 0.136 (Average = 0.44)
+
+Genre: DUBSTEP
+ - is_spoken_word: std = 0.055 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.063 (Average = 0.00)
+ - speechiness: std = 0.101 (Average = 0.09)
+ - tempo: std = 0.115 (Average = 0.55)
+ - groove_index: std = 0.118 (Average = 0.41)
+ - danceability: std = 0.129 (Average = 0.52)
+ - euphoria_index: std = 0.146 (Average = 0.20)
+ - intensity_index: std = 0.150 (Average = 0.63)
+
+Genre: EDM
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.058 (Average = 0.07)
+ - tempo: std = 0.092 (Average = 0.50)
+ - groove_index: std = 0.093 (Average = 0.47)
+ - intensity_index: std = 0.110 (Average = 0.62)
+ - danceability: std = 0.112 (Average = 0.65)
+ - energy: std = 0.117 (Average = 0.76)
+ - acousticness: std = 0.134 (Average = 0.11)
+ - liveness: std = 0.141 (Average = 0.19)
+ - instrumentalness: std = 0.148 (Average = 0.04)
+
+Genre: ELECTRO
+ - is_spoken_word: std = 0.032 (Average = 0.00)
+ - speechiness: std = 0.077 (Average = 0.08)
+ - tempo: std = 0.113 (Average = 0.50)
+ - groove_index: std = 0.113 (Average = 0.46)
+ - danceability: std = 0.124 (Average = 0.65)
+ - liveness: std = 0.135 (Average = 0.18)
+ - instrumentalness: std = 0.142 (Average = 0.04)
+
+Genre: ELECTRONIC
+ - is_spoken_word: std = 0.045 (Average = 0.00)
+ - speechiness: std = 0.087 (Average = 0.08)
+ - tempo: std = 0.100 (Average = 0.51)
+ - groove_index: std = 0.117 (Average = 0.47)
+ - danceability: std = 0.132 (Average = 0.65)
+
+Genre: EMO
+ - is_spoken_word: std = 0.055 (Average = 0.00)
+ - speechiness: std = 0.112 (Average = 0.11)
+ - tempo: std = 0.128 (Average = 0.52)
+ - instrumentalness: std = 0.134 (Average = 0.03)
+ - liveness: std = 0.145 (Average = 0.18)
+ - groove_index: std = 0.149 (Average = 0.45)
+
+Genre: FOLK
+ - is_spoken_word: std = 0.032 (Average = 0.00)
+ - speechiness: std = 0.063 (Average = 0.06)
+ - tempo: std = 0.116 (Average = 0.49)
+ - groove_index: std = 0.121 (Average = 0.39)
+ - danceability: std = 0.134 (Average = 0.56)
+ - instrumentalness: std = 0.134 (Average = 0.04)
+ - liveness: std = 0.149 (Average = 0.18)
+
+Genre: FORRO
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_pure_instrumental: std = 0.000 (Average = 0.00)
+ - instrumentalness: std = 0.016 (Average = 0.00)
+ - speechiness: std = 0.040 (Average = 0.06)
+ - danceability: std = 0.117 (Average = 0.65)
+ - tempo: std = 0.118 (Average = 0.58)
+ - intensity_index: std = 0.123 (Average = 0.65)
+ - energy: std = 0.127 (Average = 0.79)
+ - groove_index: std = 0.137 (Average = 0.54)
+
+Genre: FRENCH
+ - is_spoken_word: std = 0.055 (Average = 0.00)
+ - tempo: std = 0.103 (Average = 0.48)
+ - speechiness: std = 0.134 (Average = 0.13)
+ - liveness: std = 0.145 (Average = 0.17)
+
+Genre: FUNK
+ - instrumentalness: std = 0.055 (Average = 0.01)
+ - is_pure_instrumental: std = 0.071 (Average = 0.01)
+ - is_spoken_word: std = 0.094 (Average = 0.01)
+ - tempo: std = 0.111 (Average = 0.48)
+ - is_strictly_acoustic: std = 0.126 (Average = 0.02)
+ - intensity_index: std = 0.149 (Average = 0.51)
+
+Genre: GARAGE
+ - is_spoken_word: std = 0.063 (Average = 0.00)
+ - speechiness: std = 0.074 (Average = 0.07)
+ - groove_index: std = 0.118 (Average = 0.36)
+ - tempo: std = 0.118 (Average = 0.52)
+
+Genre: GERMAN
+ - is_spoken_word: std = 0.056 (Average = 0.00)
+ - speechiness: std = 0.116 (Average = 0.10)
+ - tempo: std = 0.119 (Average = 0.48)
+
+Genre: GOSPEL
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.029 (Average = 0.04)
+ - instrumentalness: std = 0.036 (Average = 0.00)
+ - is_pure_instrumental: std = 0.055 (Average = 0.00)
+ - tempo: std = 0.107 (Average = 0.52)
+ - groove_index: std = 0.114 (Average = 0.35)
+ - danceability: std = 0.129 (Average = 0.47)
+ - euphoria_index: std = 0.137 (Average = 0.18)
+
+Genre: GOTH
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.076 (Average = 0.07)
+ - tempo: std = 0.113 (Average = 0.51)
+ - groove_index: std = 0.117 (Average = 0.35)
+
+Genre: GRINDCORE
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - is_spoken_word: std = 0.032 (Average = 0.00)
+ - acousticness: std = 0.048 (Average = 0.01)
+ - groove_index: std = 0.067 (Average = 0.19)
+ - speechiness: std = 0.079 (Average = 0.14)
+ - danceability: std = 0.087 (Average = 0.27)
+ - energy: std = 0.099 (Average = 0.92)
+ - intensity_index: std = 0.108 (Average = 0.75)
+ - tempo: std = 0.110 (Average = 0.49)
+ - electronic_index: std = 0.111 (Average = 0.92)
+ - is_strictly_synthetic: std = 0.122 (Average = 0.98)
+ - euphoria_index: std = 0.139 (Average = 0.18)
+
+Genre: GROOVE
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.060 (Average = 0.07)
+ - tempo: std = 0.087 (Average = 0.51)
+ - groove_index: std = 0.137 (Average = 0.43)
+
+Genre: GRUNGE
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.045 (Average = 0.00)
+ - speechiness: std = 0.047 (Average = 0.06)
+ - groove_index: std = 0.096 (Average = 0.35)
+ - danceability: std = 0.115 (Average = 0.46)
+ - tempo: std = 0.126 (Average = 0.53)
+ - acousticness: std = 0.131 (Average = 0.05)
+ - instrumentalness: std = 0.135 (Average = 0.04)
+ - intensity_index: std = 0.148 (Average = 0.66)
+
+Genre: GUITAR
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.029 (Average = 0.05)
+ - liveness: std = 0.117 (Average = 0.15)
+ - tempo: std = 0.121 (Average = 0.46)
+ - groove_index: std = 0.141 (Average = 0.36)
+
+Genre: HAPPY
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - energy: std = 0.100 (Average = 0.91)
+ - speechiness: std = 0.102 (Average = 0.12)
+ - acousticness: std = 0.102 (Average = 0.06)
+ - tempo: std = 0.111 (Average = 0.63)
+ - intensity_index: std = 0.112 (Average = 0.75)
+ - danceability: std = 0.113 (Average = 0.55)
+ - groove_index: std = 0.115 (Average = 0.50)
+ - electronic_index: std = 0.133 (Average = 0.86)
+
+Genre: HARD-ROCK
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.045 (Average = 0.00)
+ - speechiness: std = 0.055 (Average = 0.07)
+ - groove_index: std = 0.113 (Average = 0.36)
+ - tempo: std = 0.117 (Average = 0.52)
+ - danceability: std = 0.137 (Average = 0.48)
+ - instrumentalness: std = 0.141 (Average = 0.05)
+
+Genre: HARDCORE
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - is_spoken_word: std = 0.032 (Average = 0.00)
+ - acousticness: std = 0.119 (Average = 0.06)
+ - speechiness: std = 0.119 (Average = 0.15)
+ - groove_index: std = 0.129 (Average = 0.39)
+ - tempo: std = 0.137 (Average = 0.51)
+ - intensity_index: std = 0.149 (Average = 0.69)
+
+Genre: HARDSTYLE
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - acousticness: std = 0.082 (Average = 0.05)
+ - energy: std = 0.083 (Average = 0.90)
+ - intensity_index: std = 0.087 (Average = 0.76)
+ - tempo: std = 0.092 (Average = 0.60)
+ - speechiness: std = 0.104 (Average = 0.12)
+ - electronic_index: std = 0.112 (Average = 0.86)
+ - danceability: std = 0.119 (Average = 0.54)
+ - groove_index: std = 0.121 (Average = 0.47)
+
+Genre: HEAVY-METAL
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.051 (Average = 0.07)
+ - acousticness: std = 0.054 (Average = 0.01)
+ - groove_index: std = 0.098 (Average = 0.32)
+ - tempo: std = 0.113 (Average = 0.52)
+ - danceability: std = 0.114 (Average = 0.43)
+ - intensity_index: std = 0.130 (Average = 0.72)
+ - energy: std = 0.131 (Average = 0.87)
+ - is_strictly_synthetic: std = 0.144 (Average = 0.98)
+ - electronic_index: std = 0.146 (Average = 0.86)
+
+Genre: HIP-HOP
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - instrumentalness: std = 0.071 (Average = 0.01)
+ - is_pure_instrumental: std = 0.084 (Average = 0.01)
+ - is_strictly_acoustic: std = 0.090 (Average = 0.01)
+ - speechiness: std = 0.102 (Average = 0.13)
+ - tempo: std = 0.120 (Average = 0.48)
+ - danceability: std = 0.121 (Average = 0.74)
+ - intensity_index: std = 0.135 (Average = 0.56)
+ - groove_index: std = 0.137 (Average = 0.51)
+ - energy: std = 0.146 (Average = 0.68)
+
+Genre: HONKY-TONK
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.017 (Average = 0.04)
+ - danceability: std = 0.117 (Average = 0.57)
+ - groove_index: std = 0.120 (Average = 0.40)
+ - tempo: std = 0.121 (Average = 0.48)
+ - liveness: std = 0.136 (Average = 0.19)
+ - intensity_index: std = 0.138 (Average = 0.27)
+
+Genre: HOUSE
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.054 (Average = 0.07)
+ - tempo: std = 0.078 (Average = 0.50)
+ - groove_index: std = 0.091 (Average = 0.48)
+ - danceability: std = 0.102 (Average = 0.67)
+ - intensity_index: std = 0.104 (Average = 0.62)
+ - energy: std = 0.111 (Average = 0.76)
+ - acousticness: std = 0.126 (Average = 0.11)
+ - liveness: std = 0.146 (Average = 0.19)
+ - electronic_index: std = 0.150 (Average = 0.68)
+
+Genre: IDM
+ - is_spoken_word: std = 0.045 (Average = 0.00)
+ - speechiness: std = 0.087 (Average = 0.08)
+ - tempo: std = 0.128 (Average = 0.51)
+ - liveness: std = 0.136 (Average = 0.17)
+
+Genre: INDIAN
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.075 (Average = 0.07)
+ - tempo: std = 0.116 (Average = 0.48)
+ - liveness: std = 0.132 (Average = 0.17)
+ - groove_index: std = 0.136 (Average = 0.41)
+ - danceability: std = 0.140 (Average = 0.59)
+
+Genre: INDIE
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.060 (Average = 0.06)
+ - liveness: std = 0.123 (Average = 0.16)
+ - tempo: std = 0.125 (Average = 0.49)
+ - groove_index: std = 0.134 (Average = 0.41)
+ - danceability: std = 0.147 (Average = 0.59)
+
+Genre: INDIE-POP
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.063 (Average = 0.07)
+ - liveness: std = 0.122 (Average = 0.17)
+ - tempo: std = 0.124 (Average = 0.49)
+ - groove_index: std = 0.131 (Average = 0.43)
+ - danceability: std = 0.141 (Average = 0.60)
+ - instrumentalness: std = 0.147 (Average = 0.04)
+
+Genre: INDUSTRIAL
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.071 (Average = 0.01)
+ - speechiness: std = 0.077 (Average = 0.09)
+ - tempo: std = 0.108 (Average = 0.52)
+ - groove_index: std = 0.109 (Average = 0.40)
+ - acousticness: std = 0.115 (Average = 0.04)
+ - danceability: std = 0.120 (Average = 0.53)
+ - intensity_index: std = 0.133 (Average = 0.70)
+ - energy: std = 0.138 (Average = 0.86)
+
+Genre: IRANIAN
+ - is_spoken_word: std = 0.055 (Average = 0.00)
+ - speechiness: std = 0.098 (Average = 0.09)
+ - groove_index: std = 0.131 (Average = 0.21)
+ - euphoria_index: std = 0.131 (Average = 0.10)
+ - tempo: std = 0.145 (Average = 0.47)
+
+Genre: J-DANCE
+ - is_spoken_word: std = 0.063 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.089 (Average = 0.01)
+ - tempo: std = 0.124 (Average = 0.47)
+ - danceability: std = 0.126 (Average = 0.68)
+ - groove_index: std = 0.131 (Average = 0.46)
+ - liveness: std = 0.135 (Average = 0.18)
+ - intensity_index: std = 0.136 (Average = 0.57)
+ - speechiness: std = 0.138 (Average = 0.22)
+ - energy: std = 0.142 (Average = 0.70)
+ - instrumentalness: std = 0.145 (Average = 0.03)
+
+Genre: J-IDOL
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.052 (Average = 0.07)
+ - is_strictly_acoustic: std = 0.083 (Average = 0.01)
+ - groove_index: std = 0.097 (Average = 0.44)
+ - danceability: std = 0.110 (Average = 0.55)
+ - tempo: std = 0.116 (Average = 0.56)
+ - intensity_index: std = 0.131 (Average = 0.74)
+ - energy: std = 0.133 (Average = 0.87)
+ - instrumentalness: std = 0.145 (Average = 0.04)
+
+Genre: J-POP
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.051 (Average = 0.06)
+ - instrumentalness: std = 0.067 (Average = 0.01)
+ - is_pure_instrumental: std = 0.071 (Average = 0.01)
+ - groove_index: std = 0.116 (Average = 0.40)
+ - danceability: std = 0.126 (Average = 0.55)
+ - tempo: std = 0.130 (Average = 0.51)
+ - liveness: std = 0.136 (Average = 0.20)
+
+Genre: J-ROCK
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.052 (Average = 0.06)
+ - groove_index: std = 0.108 (Average = 0.38)
+ - instrumentalness: std = 0.110 (Average = 0.02)
+ - is_pure_instrumental: std = 0.126 (Average = 0.02)
+ - danceability: std = 0.126 (Average = 0.51)
+ - tempo: std = 0.131 (Average = 0.53)
+
+Genre: JAZZ
+ - is_spoken_word: std = 0.071 (Average = 0.01)
+ - speechiness: std = 0.078 (Average = 0.05)
+ - tempo: std = 0.130 (Average = 0.46)
+ - groove_index: std = 0.132 (Average = 0.34)
+ - liveness: std = 0.133 (Average = 0.17)
+ - euphoria_index: std = 0.143 (Average = 0.17)
+ - danceability: std = 0.144 (Average = 0.51)
+
+Genre: K-POP
+ - is_spoken_word: std = 0.045 (Average = 0.00)
+ - instrumentalness: std = 0.070 (Average = 0.01)
+ - is_pure_instrumental: std = 0.077 (Average = 0.01)
+ - speechiness: std = 0.089 (Average = 0.09)
+ - tempo: std = 0.113 (Average = 0.49)
+ - groove_index: std = 0.129 (Average = 0.46)
+ - liveness: std = 0.129 (Average = 0.18)
+ - danceability: std = 0.137 (Average = 0.65)
+
+Genre: KIDS
+ - instrumentalness: std = 0.102 (Average = 0.02)
+ - is_spoken_word: std = 0.105 (Average = 0.01)
+ - tempo: std = 0.108 (Average = 0.50)
+ - danceability: std = 0.125 (Average = 0.78)
+ - is_pure_instrumental: std = 0.130 (Average = 0.02)
+ - groove_index: std = 0.139 (Average = 0.56)
+ - liveness: std = 0.141 (Average = 0.17)
+
+Genre: LATIN
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - instrumentalness: std = 0.067 (Average = 0.01)
+ - speechiness: std = 0.074 (Average = 0.09)
+ - is_pure_instrumental: std = 0.078 (Average = 0.01)
+ - is_strictly_acoustic: std = 0.109 (Average = 0.01)
+ - danceability: std = 0.119 (Average = 0.72)
+ - intensity_index: std = 0.127 (Average = 0.60)
+ - tempo: std = 0.135 (Average = 0.49)
+ - energy: std = 0.136 (Average = 0.73)
+ - liveness: std = 0.138 (Average = 0.17)
+ - groove_index: std = 0.141 (Average = 0.51)
+
+Genre: LATINO
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - instrumentalness: std = 0.052 (Average = 0.01)
+ - is_pure_instrumental: std = 0.055 (Average = 0.00)
+ - speechiness: std = 0.087 (Average = 0.11)
+ - danceability: std = 0.088 (Average = 0.76)
+ - is_strictly_acoustic: std = 0.095 (Average = 0.01)
+ - intensity_index: std = 0.115 (Average = 0.61)
+ - energy: std = 0.123 (Average = 0.73)
+ - liveness: std = 0.126 (Average = 0.17)
+ - tempo: std = 0.136 (Average = 0.49)
+ - groove_index: std = 0.137 (Average = 0.53)
+
+Genre: MALAY
+ - is_spoken_word: std = 0.045 (Average = 0.00)
+ - is_pure_instrumental: std = 0.045 (Average = 0.00)
+ - instrumentalness: std = 0.051 (Average = 0.01)
+ - speechiness: std = 0.089 (Average = 0.08)
+ - tempo: std = 0.120 (Average = 0.49)
+ - liveness: std = 0.127 (Average = 0.17)
+ - groove_index: std = 0.132 (Average = 0.44)
+ - danceability: std = 0.136 (Average = 0.63)
+
+Genre: MANDOPOP
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_pure_instrumental: std = 0.000 (Average = 0.00)
+ - instrumentalness: std = 0.027 (Average = 0.00)
+ - speechiness: std = 0.028 (Average = 0.04)
+ - liveness: std = 0.109 (Average = 0.16)
+ - groove_index: std = 0.111 (Average = 0.40)
+ - danceability: std = 0.118 (Average = 0.55)
+ - tempo: std = 0.120 (Average = 0.51)
+ - euphoria_index: std = 0.129 (Average = 0.17)
+ - intensity_index: std = 0.145 (Average = 0.39)
+
+Genre: METAL
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.052 (Average = 0.07)
+ - acousticness: std = 0.097 (Average = 0.04)
+ - groove_index: std = 0.099 (Average = 0.35)
+ - danceability: std = 0.118 (Average = 0.46)
+ - tempo: std = 0.123 (Average = 0.53)
+ - intensity_index: std = 0.136 (Average = 0.69)
+ - energy: std = 0.144 (Average = 0.84)
+
+Genre: METALCORE
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - acousticness: std = 0.048 (Average = 0.01)
+ - speechiness: std = 0.071 (Average = 0.11)
+ - intensity_index: std = 0.094 (Average = 0.77)
+ - energy: std = 0.095 (Average = 0.91)
+ - groove_index: std = 0.097 (Average = 0.32)
+ - danceability: std = 0.111 (Average = 0.42)
+ - electronic_index: std = 0.112 (Average = 0.91)
+ - is_strictly_synthetic: std = 0.122 (Average = 0.98)
+ - tempo: std = 0.127 (Average = 0.54)
+ - euphoria_index: std = 0.149 (Average = 0.28)
+
+Genre: MINIMAL-TECHNO
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - tempo: std = 0.039 (Average = 0.51)
+ - is_strictly_acoustic: std = 0.045 (Average = 0.00)
+ - speechiness: std = 0.049 (Average = 0.06)
+ - groove_index: std = 0.080 (Average = 0.54)
+ - danceability: std = 0.101 (Average = 0.73)
+ - liveness: std = 0.108 (Average = 0.14)
+ - acousticness: std = 0.145 (Average = 0.07)
+
+Genre: MPB
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.055 (Average = 0.06)
+ - instrumentalness: std = 0.081 (Average = 0.02)
+ - is_pure_instrumental: std = 0.089 (Average = 0.01)
+ - tempo: std = 0.122 (Average = 0.49)
+ - groove_index: std = 0.124 (Average = 0.41)
+ - danceability: std = 0.132 (Average = 0.57)
+
+Genre: NEW-AGE
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.036 (Average = 0.05)
+ - euphoria_index: std = 0.087 (Average = 0.04)
+ - groove_index: std = 0.124 (Average = 0.23)
+ - tempo: std = 0.128 (Average = 0.44)
+ - intensity_index: std = 0.147 (Average = 0.14)
+
+Genre: OPERA
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.036 (Average = 0.05)
+ - euphoria_index: std = 0.094 (Average = 0.07)
+ - groove_index: std = 0.107 (Average = 0.20)
+ - tempo: std = 0.127 (Average = 0.43)
+ - danceability: std = 0.132 (Average = 0.31)
+
+Genre: PAGODE
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_pure_instrumental: std = 0.000 (Average = 0.00)
+ - instrumentalness: std = 0.011 (Average = 0.00)
+ - speechiness: std = 0.043 (Average = 0.06)
+ - danceability: std = 0.113 (Average = 0.58)
+ - intensity_index: std = 0.116 (Average = 0.56)
+ - tempo: std = 0.125 (Average = 0.52)
+ - groove_index: std = 0.126 (Average = 0.43)
+ - energy: std = 0.128 (Average = 0.71)
+
+Genre: PARTY
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_pure_instrumental: std = 0.000 (Average = 0.00)
+ - instrumentalness: std = 0.018 (Average = 0.00)
+ - tempo: std = 0.067 (Average = 0.54)
+ - speechiness: std = 0.070 (Average = 0.09)
+ - groove_index: std = 0.093 (Average = 0.52)
+ - danceability: std = 0.104 (Average = 0.67)
+ - acousticness: std = 0.118 (Average = 0.09)
+ - energy: std = 0.121 (Average = 0.87)
+ - intensity_index: std = 0.121 (Average = 0.73)
+
+Genre: PIANO
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.032 (Average = 0.05)
+ - liveness: std = 0.122 (Average = 0.14)
+ - groove_index: std = 0.130 (Average = 0.32)
+ - danceability: std = 0.140 (Average = 0.46)
+ - tempo: std = 0.145 (Average = 0.49)
+
+Genre: POP
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - instrumentalness: std = 0.060 (Average = 0.01)
+ - is_pure_instrumental: std = 0.071 (Average = 0.01)
+ - speechiness: std = 0.080 (Average = 0.08)
+ - liveness: std = 0.102 (Average = 0.16)
+ - tempo: std = 0.128 (Average = 0.50)
+ - danceability: std = 0.139 (Average = 0.63)
+ - groove_index: std = 0.142 (Average = 0.45)
+
+Genre: POP-FILM
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - instrumentalness: std = 0.054 (Average = 0.01)
+ - speechiness: std = 0.061 (Average = 0.06)
+ - is_pure_instrumental: std = 0.071 (Average = 0.01)
+ - tempo: std = 0.116 (Average = 0.48)
+ - liveness: std = 0.122 (Average = 0.17)
+ - groove_index: std = 0.131 (Average = 0.42)
+ - danceability: std = 0.137 (Average = 0.60)
+
+Genre: POWER-POP
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.040 (Average = 0.06)
+ - is_strictly_acoustic: std = 0.071 (Average = 0.01)
+ - groove_index: std = 0.108 (Average = 0.37)
+ - tempo: std = 0.122 (Average = 0.55)
+ - danceability: std = 0.140 (Average = 0.47)
+
+Genre: PROGRESSIVE-HOUSE
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - is_spoken_word: std = 0.032 (Average = 0.00)
+ - tempo: std = 0.049 (Average = 0.51)
+ - speechiness: std = 0.063 (Average = 0.07)
+ - groove_index: std = 0.081 (Average = 0.46)
+ - acousticness: std = 0.093 (Average = 0.06)
+ - intensity_index: std = 0.108 (Average = 0.67)
+ - danceability: std = 0.110 (Average = 0.62)
+ - energy: std = 0.113 (Average = 0.81)
+ - electronic_index: std = 0.142 (Average = 0.77)
+
+Genre: PSYCH-ROCK
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.039 (Average = 0.05)
+ - tempo: std = 0.114 (Average = 0.50)
+ - groove_index: std = 0.116 (Average = 0.36)
+ - danceability: std = 0.145 (Average = 0.50)
+
+Genre: PUNK
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.049 (Average = 0.06)
+ - is_strictly_acoustic: std = 0.089 (Average = 0.01)
+ - groove_index: std = 0.105 (Average = 0.39)
+ - tempo: std = 0.129 (Average = 0.55)
+ - danceability: std = 0.132 (Average = 0.50)
+ - instrumentalness: std = 0.137 (Average = 0.04)
+
+Genre: PUNK-ROCK
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.047 (Average = 0.06)
+ - is_strictly_acoustic: std = 0.089 (Average = 0.01)
+ - groove_index: std = 0.106 (Average = 0.39)
+ - instrumentalness: std = 0.121 (Average = 0.03)
+ - tempo: std = 0.127 (Average = 0.54)
+ - danceability: std = 0.130 (Average = 0.51)
+
+Genre: R-N-B
+ - is_pure_instrumental: std = 0.045 (Average = 0.00)
+ - instrumentalness: std = 0.051 (Average = 0.01)
+ - is_spoken_word: std = 0.055 (Average = 0.00)
+ - speechiness: std = 0.105 (Average = 0.09)
+ - tempo: std = 0.117 (Average = 0.51)
+ - groove_index: std = 0.131 (Average = 0.45)
+ - danceability: std = 0.142 (Average = 0.61)
+
+Genre: REGGAE
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_pure_instrumental: std = 0.000 (Average = 0.00)
+ - instrumentalness: std = 0.022 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.032 (Average = 0.00)
+ - speechiness: std = 0.095 (Average = 0.12)
+ - danceability: std = 0.100 (Average = 0.75)
+ - intensity_index: std = 0.117 (Average = 0.60)
+ - energy: std = 0.122 (Average = 0.73)
+ - tempo: std = 0.137 (Average = 0.49)
+ - groove_index: std = 0.144 (Average = 0.53)
+
+Genre: REGGAETON
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_pure_instrumental: std = 0.000 (Average = 0.00)
+ - instrumentalness: std = 0.021 (Average = 0.00)
+ - is_strictly_acoustic: std = 0.032 (Average = 0.00)
+ - danceability: std = 0.086 (Average = 0.76)
+ - speechiness: std = 0.096 (Average = 0.12)
+ - intensity_index: std = 0.106 (Average = 0.61)
+ - energy: std = 0.110 (Average = 0.74)
+ - liveness: std = 0.125 (Average = 0.17)
+ - tempo: std = 0.141 (Average = 0.49)
+ - groove_index: std = 0.145 (Average = 0.53)
+
+Genre: ROCK
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.038 (Average = 0.05)
+ - instrumentalness: std = 0.090 (Average = 0.02)
+ - is_pure_instrumental: std = 0.100 (Average = 0.01)
+ - groove_index: std = 0.112 (Average = 0.40)
+ - tempo: std = 0.128 (Average = 0.52)
+ - liveness: std = 0.133 (Average = 0.17)
+ - danceability: std = 0.138 (Average = 0.54)
+
+Genre: ROCK-N-ROLL
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.045 (Average = 0.05)
+ - instrumentalness: std = 0.074 (Average = 0.01)
+ - is_pure_instrumental: std = 0.094 (Average = 0.01)
+ - tempo: std = 0.124 (Average = 0.49)
+ - groove_index: std = 0.127 (Average = 0.39)
+ - danceability: std = 0.136 (Average = 0.55)
+
+Genre: ROCKABILLY
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.049 (Average = 0.06)
+ - instrumentalness: std = 0.115 (Average = 0.03)
+ - danceability: std = 0.122 (Average = 0.56)
+ - groove_index: std = 0.125 (Average = 0.41)
+ - is_pure_instrumental: std = 0.137 (Average = 0.02)
+ - tempo: std = 0.138 (Average = 0.51)
+
+Genre: ROMANCE
+ - is_spoken_word: std = 0.033 (Average = 0.00)
+ - speechiness: std = 0.058 (Average = 0.06)
+ - euphoria_index: std = 0.115 (Average = 0.11)
+ - groove_index: std = 0.118 (Average = 0.28)
+ - electronic_index: std = 0.120 (Average = 0.06)
+ - tempo: std = 0.121 (Average = 0.45)
+ - intensity_index: std = 0.139 (Average = 0.21)
+ - danceability: std = 0.139 (Average = 0.43)
+ - is_strictly_synthetic: std = 0.140 (Average = 0.02)
+ - instrumentalness: std = 0.144 (Average = 0.05)
+
+Genre: SAD
+ - is_spoken_word: std = 0.055 (Average = 0.00)
+ - liveness: std = 0.120 (Average = 0.17)
+ - speechiness: std = 0.125 (Average = 0.13)
+ - tempo: std = 0.126 (Average = 0.49)
+ - danceability: std = 0.126 (Average = 0.69)
+ - euphoria_index: std = 0.137 (Average = 0.18)
+ - groove_index: std = 0.141 (Average = 0.49)
+
+Genre: SALSA
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.047 (Average = 0.06)
+ - instrumentalness: std = 0.080 (Average = 0.01)
+ - is_pure_instrumental: std = 0.089 (Average = 0.01)
+ - danceability: std = 0.108 (Average = 0.67)
+ - groove_index: std = 0.133 (Average = 0.47)
+ - tempo: std = 0.137 (Average = 0.49)
+ - intensity_index: std = 0.142 (Average = 0.58)
+ - energy: std = 0.147 (Average = 0.72)
+ - valence: std = 0.147 (Average = 0.81)
+
+Genre: SAMBA
+ - is_spoken_word: std = 0.032 (Average = 0.00)
+ - instrumentalness: std = 0.063 (Average = 0.01)
+ - is_pure_instrumental: std = 0.071 (Average = 0.01)
+ - speechiness: std = 0.078 (Average = 0.08)
+ - danceability: std = 0.117 (Average = 0.57)
+ - tempo: std = 0.119 (Average = 0.49)
+ - groove_index: std = 0.121 (Average = 0.40)
+
+Genre: SERTANEJO
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - is_pure_instrumental: std = 0.000 (Average = 0.00)
+ - instrumentalness: std = 0.004 (Average = 0.00)
+ - speechiness: std = 0.055 (Average = 0.06)
+ - danceability: std = 0.122 (Average = 0.59)
+ - groove_index: std = 0.125 (Average = 0.44)
+ - tempo: std = 0.126 (Average = 0.52)
+ - intensity_index: std = 0.142 (Average = 0.59)
+
+Genre: SHOW-TUNES
+ - is_spoken_word: std = 0.100 (Average = 0.01)
+ - tempo: std = 0.127 (Average = 0.47)
+ - groove_index: std = 0.135 (Average = 0.32)
+ - speechiness: std = 0.139 (Average = 0.11)
+ - euphoria_index: std = 0.140 (Average = 0.15)
+
+Genre: SINGER-SONGWRITER
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.064 (Average = 0.05)
+ - liveness: std = 0.099 (Average = 0.15)
+ - instrumentalness: std = 0.109 (Average = 0.03)
+ - groove_index: std = 0.120 (Average = 0.40)
+ - is_pure_instrumental: std = 0.126 (Average = 0.02)
+ - tempo: std = 0.127 (Average = 0.49)
+ - danceability: std = 0.132 (Average = 0.56)
+
+Genre: SKA
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.060 (Average = 0.07)
+ - is_strictly_acoustic: std = 0.083 (Average = 0.01)
+ - instrumentalness: std = 0.112 (Average = 0.03)
+ - tempo: std = 0.124 (Average = 0.53)
+ - groove_index: std = 0.126 (Average = 0.44)
+ - is_pure_instrumental: std = 0.137 (Average = 0.02)
+ - danceability: std = 0.144 (Average = 0.58)
+
+Genre: SLEEP
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - euphoria_index: std = 0.022 (Average = 0.01)
+ - speechiness: std = 0.056 (Average = 0.06)
+ - groove_index: std = 0.081 (Average = 0.10)
+ - valence: std = 0.096 (Average = 0.06)
+ - danceability: std = 0.119 (Average = 0.17)
+
+Genre: SONGWRITER
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.064 (Average = 0.05)
+ - liveness: std = 0.099 (Average = 0.15)
+ - instrumentalness: std = 0.109 (Average = 0.03)
+ - groove_index: std = 0.120 (Average = 0.40)
+ - is_pure_instrumental: std = 0.126 (Average = 0.02)
+ - tempo: std = 0.127 (Average = 0.49)
+ - danceability: std = 0.132 (Average = 0.56)
+
+Genre: SOUL
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.056 (Average = 0.06)
+ - instrumentalness: std = 0.080 (Average = 0.01)
+ - is_pure_instrumental: std = 0.095 (Average = 0.01)
+ - tempo: std = 0.117 (Average = 0.47)
+ - groove_index: std = 0.135 (Average = 0.41)
+
+Genre: SPANISH
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.090 (Average = 0.09)
+ - instrumentalness: std = 0.104 (Average = 0.02)
+ - tempo: std = 0.124 (Average = 0.50)
+ - is_pure_instrumental: std = 0.129 (Average = 0.02)
+ - groove_index: std = 0.133 (Average = 0.44)
+ - danceability: std = 0.140 (Average = 0.60)
+
+Genre: STUDY
+ - is_spoken_word: std = 0.045 (Average = 0.00)
+ - speechiness: std = 0.097 (Average = 0.10)
+ - danceability: std = 0.101 (Average = 0.69)
+ - liveness: std = 0.127 (Average = 0.16)
+ - euphoria_index: std = 0.130 (Average = 0.15)
+ - intensity_index: std = 0.140 (Average = 0.30)
+ - tempo: std = 0.146 (Average = 0.46)
+
+Genre: SWEDISH
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.071 (Average = 0.06)
+ - instrumentalness: std = 0.108 (Average = 0.02)
+ - tempo: std = 0.111 (Average = 0.50)
+ - is_pure_instrumental: std = 0.122 (Average = 0.01)
+ - groove_index: std = 0.128 (Average = 0.42)
+ - liveness: std = 0.144 (Average = 0.19)
+ - danceability: std = 0.146 (Average = 0.59)
+
+Genre: SYNTH-POP
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.035 (Average = 0.05)
+ - tempo: std = 0.093 (Average = 0.50)
+ - groove_index: std = 0.105 (Average = 0.45)
+ - is_strictly_acoustic: std = 0.109 (Average = 0.01)
+ - danceability: std = 0.124 (Average = 0.62)
+
+Genre: TANGO
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.071 (Average = 0.08)
+ - electronic_index: std = 0.074 (Average = 0.06)
+ - is_strictly_synthetic: std = 0.077 (Average = 0.01)
+ - tempo: std = 0.095 (Average = 0.47)
+ - groove_index: std = 0.112 (Average = 0.37)
+ - euphoria_index: std = 0.118 (Average = 0.20)
+ - intensity_index: std = 0.118 (Average = 0.28)
+ - danceability: std = 0.123 (Average = 0.54)
+ - energy: std = 0.140 (Average = 0.37)
+ - acousticness: std = 0.147 (Average = 0.85)
+
+Genre: TECHNO
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.056 (Average = 0.06)
+ - is_strictly_acoustic: std = 0.063 (Average = 0.00)
+ - tempo: std = 0.065 (Average = 0.53)
+ - groove_index: std = 0.087 (Average = 0.52)
+ - danceability: std = 0.115 (Average = 0.68)
+ - liveness: std = 0.137 (Average = 0.16)
+
+Genre: TRANCE
+ - is_strictly_acoustic: std = 0.000 (Average = 0.00)
+ - is_spoken_word: std = 0.045 (Average = 0.00)
+ - tempo: std = 0.062 (Average = 0.55)
+ - acousticness: std = 0.073 (Average = 0.04)
+ - speechiness: std = 0.076 (Average = 0.08)
+ - groove_index: std = 0.102 (Average = 0.46)
+ - intensity_index: std = 0.113 (Average = 0.68)
+ - energy: std = 0.122 (Average = 0.85)
+ - danceability: std = 0.125 (Average = 0.58)
+ - electronic_index: std = 0.146 (Average = 0.82)
+
+Genre: TRIP-HOP
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.083 (Average = 0.08)
+ - tempo: std = 0.125 (Average = 0.49)
+ - groove_index: std = 0.136 (Average = 0.45)
+ - danceability: std = 0.137 (Average = 0.63)
+
+Genre: TURKISH
+ - is_spoken_word: std = 0.000 (Average = 0.00)
+ - speechiness: std = 0.105 (Average = 0.11)
+ - tempo: std = 0.122 (Average = 0.49)
+ - groove_index: std = 0.138 (Average = 0.44)
+ - liveness: std = 0.138 (Average = 0.18)
+ - instrumentalness: std = 0.139 (Average = 0.04)
+
+Genre: WORLD-MUSIC
+ - is_spoken_word: std = 0.032 (Average = 0.00)
+ - speechiness: std = 0.036 (Average = 0.04)
+ - groove_index: std = 0.117 (Average = 0.30)
+ - tempo: std = 0.125 (Average = 0.50)
+ - euphoria_index: std = 0.136 (Average = 0.14)
+ - danceability: std = 0.139 (Average = 0.41)
+

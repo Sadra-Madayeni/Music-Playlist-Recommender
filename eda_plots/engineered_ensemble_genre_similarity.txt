@@ -1,0 +1,573 @@
+--- ENGINEERED ENSEMBLE GENRE SIMILARITY (Top 3) ---
+50% Standard Cosine Similarity + 50% Strict-Rule Weighted Similarity
+
+Genre: ACOUSTIC
+  -> SINGER-SONGWRITER (Ensemble Score: 0.9996)
+  -> SONGWRITER (Ensemble Score: 0.9996)
+  -> CANTOPOP (Ensemble Score: 0.9969)
+
+Genre: AFROBEAT
+  -> DISCO (Ensemble Score: 0.9889)
+  -> ANIME (Ensemble Score: 0.9858)
+  -> PSYCH-ROCK (Ensemble Score: 0.9855)
+
+Genre: ALT-ROCK
+  -> ALTERNATIVE (Ensemble Score: 0.9988)
+  -> J-ROCK (Ensemble Score: 0.9987)
+  -> PUNK (Ensemble Score: 0.9982)
+
+Genre: ALTERNATIVE
+  -> ALT-ROCK (Ensemble Score: 0.9988)
+  -> EDM (Ensemble Score: 0.9978)
+  -> J-ROCK (Ensemble Score: 0.9977)
+
+Genre: AMBIENT
+  -> NEW-AGE (Ensemble Score: 0.9966)
+  -> CLASSICAL (Ensemble Score: 0.9801)
+  -> PIANO (Ensemble Score: 0.9703)
+
+Genre: ANIME
+  -> ELECTRONIC (Ensemble Score: 0.9932)
+  -> CLUB (Ensemble Score: 0.9929)
+  -> GARAGE (Ensemble Score: 0.9909)
+
+Genre: BLACK-METAL
+  -> GRINDCORE (Ensemble Score: 0.9964)
+  -> DEATH-METAL (Ensemble Score: 0.9905)
+  -> DRUM-AND-BASS (Ensemble Score: 0.9751)
+
+Genre: BLUEGRASS
+  -> ROCK-N-ROLL (Ensemble Score: 0.9909)
+  -> FOLK (Ensemble Score: 0.9883)
+  -> BRITISH (Ensemble Score: 0.9883)
+
+Genre: BLUES
+  -> R-N-B (Ensemble Score: 0.9977)
+  -> POP-FILM (Ensemble Score: 0.9971)
+  -> SOUL (Ensemble Score: 0.9969)
+
+Genre: BRAZIL
+  -> SWEDISH (Ensemble Score: 0.9955)
+  -> TURKISH (Ensemble Score: 0.9954)
+  -> R-N-B (Ensemble Score: 0.9946)
+
+Genre: BREAKBEAT
+  -> DRUM-AND-BASS (Ensemble Score: 0.9928)
+  -> PROGRESSIVE-HOUSE (Ensemble Score: 0.9927)
+  -> CLUB (Ensemble Score: 0.9926)
+
+Genre: BRITISH
+  -> GERMAN (Ensemble Score: 0.9922)
+  -> BLUEGRASS (Ensemble Score: 0.9883)
+  -> FRENCH (Ensemble Score: 0.9870)
+
+Genre: CANTOPOP
+  -> SONGWRITER (Ensemble Score: 0.9981)
+  -> SINGER-SONGWRITER (Ensemble Score: 0.9981)
+  -> MANDOPOP (Ensemble Score: 0.9970)
+
+Genre: CHICAGO-HOUSE
+  -> DETROIT-TECHNO (Ensemble Score: 0.9879)
+  -> TECHNO (Ensemble Score: 0.9872)
+  -> TRIP-HOP (Ensemble Score: 0.9871)
+
+Genre: CHILDREN
+  -> SOUL (Ensemble Score: 0.9894)
+  -> ROCK-N-ROLL (Ensemble Score: 0.9876)
+  -> FOLK (Ensemble Score: 0.9867)
+
+Genre: CHILL
+  -> SAD (Ensemble Score: 0.9957)
+  -> ACOUSTIC (Ensemble Score: 0.9824)
+  -> SINGER-SONGWRITER (Ensemble Score: 0.9818)
+
+Genre: CLASSICAL
+  -> NEW-AGE (Ensemble Score: 0.9841)
+  -> AMBIENT (Ensemble Score: 0.9801)
+  -> GUITAR (Ensemble Score: 0.9713)
+
+Genre: CLUB
+  -> ELECTRONIC (Ensemble Score: 0.9956)
+  -> ANIME (Ensemble Score: 0.9929)
+  -> BREAKBEAT (Ensemble Score: 0.9926)
+
+Genre: COMEDY
+  -> SHOW-TUNES (Ensemble Score: 0.8277)
+  -> FUNK (Ensemble Score: 0.7954)
+  -> CHILDREN (Ensemble Score: 0.7804)
+
+Genre: COUNTRY
+  -> SWEDISH (Ensemble Score: 0.9990)
+  -> POP (Ensemble Score: 0.9968)
+  -> K-POP (Ensemble Score: 0.9963)
+
+Genre: DANCE
+  -> LATIN (Ensemble Score: 0.9984)
+  -> LATINO (Ensemble Score: 0.9983)
+  -> REGGAETON (Ensemble Score: 0.9981)
+
+Genre: DANCEHALL
+  -> REGGAE (Ensemble Score: 0.9977)
+  -> HIP-HOP (Ensemble Score: 0.9977)
+  -> LATINO (Ensemble Score: 0.9976)
+
+Genre: DEATH-METAL
+  -> BLACK-METAL (Ensemble Score: 0.9905)
+  -> METALCORE (Ensemble Score: 0.9858)
+  -> HEAVY-METAL (Ensemble Score: 0.9842)
+
+Genre: DEEP-HOUSE
+  -> ELECTRONIC (Ensemble Score: 0.9972)
+  -> PROGRESSIVE-HOUSE (Ensemble Score: 0.9934)
+  -> GROOVE (Ensemble Score: 0.9926)
+
+Genre: DETROIT-TECHNO
+  -> MINIMAL-TECHNO (Ensemble Score: 0.9940)
+  -> TECHNO (Ensemble Score: 0.9929)
+  -> CHICAGO-HOUSE (Ensemble Score: 0.9879)
+
+Genre: DISCO
+  -> SYNTH-POP (Ensemble Score: 0.9987)
+  -> LATIN (Ensemble Score: 0.9963)
+  -> DANCE (Ensemble Score: 0.9949)
+
+Genre: DISNEY
+  -> GUITAR (Ensemble Score: 0.9938)
+  -> PIANO (Ensemble Score: 0.9904)
+  -> CLASSICAL (Ensemble Score: 0.9667)
+
+Genre: DRUM-AND-BASS
+  -> TRANCE (Ensemble Score: 0.9967)
+  -> HAPPY (Ensemble Score: 0.9964)
+  -> BREAKBEAT (Ensemble Score: 0.9928)
+
+Genre: DUB
+  -> GROOVE (Ensemble Score: 0.9971)
+  -> EDM (Ensemble Score: 0.9962)
+  -> EMO (Ensemble Score: 0.9952)
+
+Genre: DUBSTEP
+  -> HARDSTYLE (Ensemble Score: 0.9970)
+  -> DUB (Ensemble Score: 0.9949)
+  -> HAPPY (Ensemble Score: 0.9932)
+
+Genre: EDM
+  -> HOUSE (Ensemble Score: 0.9997)
+  -> ALTERNATIVE (Ensemble Score: 0.9978)
+  -> DANCE (Ensemble Score: 0.9965)
+
+Genre: ELECTRO
+  -> EMO (Ensemble Score: 0.9983)
+  -> K-POP (Ensemble Score: 0.9969)
+  -> HIP-HOP (Ensemble Score: 0.9966)
+
+Genre: ELECTRONIC
+  -> DEEP-HOUSE (Ensemble Score: 0.9972)
+  -> CLUB (Ensemble Score: 0.9956)
+  -> ANIME (Ensemble Score: 0.9932)
+
+Genre: EMO
+  -> ELECTRO (Ensemble Score: 0.9983)
+  -> EDM (Ensemble Score: 0.9957)
+  -> ALTERNATIVE (Ensemble Score: 0.9953)
+
+Genre: FOLK
+  -> INDIAN (Ensemble Score: 0.9992)
+  -> POP-FILM (Ensemble Score: 0.9977)
+  -> SOUL (Ensemble Score: 0.9976)
+
+Genre: FORRO
+  -> ROCKABILLY (Ensemble Score: 0.9952)
+  -> R-N-B (Ensemble Score: 0.9949)
+  -> SALSA (Ensemble Score: 0.9941)
+
+Genre: FRENCH
+  -> INDIE (Ensemble Score: 0.9919)
+  -> TURKISH (Ensemble Score: 0.9918)
+  -> INDIE-POP (Ensemble Score: 0.9914)
+
+Genre: FUNK
+  -> K-POP (Ensemble Score: 0.9971)
+  -> DANCEHALL (Ensemble Score: 0.9967)
+  -> POP (Ensemble Score: 0.9963)
+
+Genre: GARAGE
+  -> GOTH (Ensemble Score: 0.9971)
+  -> GROOVE (Ensemble Score: 0.9937)
+  -> ALT-ROCK (Ensemble Score: 0.9924)
+
+Genre: GERMAN
+  -> BRITISH (Ensemble Score: 0.9922)
+  -> ANIME (Ensemble Score: 0.9898)
+  -> TRIP-HOP (Ensemble Score: 0.9895)
+
+Genre: GOSPEL
+  -> BRAZIL (Ensemble Score: 0.9903)
+  -> WORLD-MUSIC (Ensemble Score: 0.9867)
+  -> MANDOPOP (Ensemble Score: 0.9842)
+
+Genre: GOTH
+  -> GARAGE (Ensemble Score: 0.9971)
+  -> GROOVE (Ensemble Score: 0.9968)
+  -> ALT-ROCK (Ensemble Score: 0.9958)
+
+Genre: GRINDCORE
+  -> BLACK-METAL (Ensemble Score: 0.9964)
+  -> DEATH-METAL (Ensemble Score: 0.9828)
+  -> TRANCE (Ensemble Score: 0.9612)
+
+Genre: GROOVE
+  -> DUB (Ensemble Score: 0.9971)
+  -> GOTH (Ensemble Score: 0.9968)
+  -> PROGRESSIVE-HOUSE (Ensemble Score: 0.9965)
+
+Genre: GRUNGE
+  -> METAL (Ensemble Score: 0.9994)
+  -> HEAVY-METAL (Ensemble Score: 0.9967)
+  -> HARD-ROCK (Ensemble Score: 0.9963)
+
+Genre: GUITAR
+  -> DISNEY (Ensemble Score: 0.9938)
+  -> PIANO (Ensemble Score: 0.9928)
+  -> CLASSICAL (Ensemble Score: 0.9713)
+
+Genre: HAPPY
+  -> HARDSTYLE (Ensemble Score: 0.9972)
+  -> DRUM-AND-BASS (Ensemble Score: 0.9964)
+  -> PROGRESSIVE-HOUSE (Ensemble Score: 0.9949)
+
+Genre: HARD-ROCK
+  -> PUNK (Ensemble Score: 0.9995)
+  -> PUNK-ROCK (Ensemble Score: 0.9993)
+  -> POWER-POP (Ensemble Score: 0.9979)
+
+Genre: HARDCORE
+  -> HARD-ROCK (Ensemble Score: 0.9967)
+  -> METAL (Ensemble Score: 0.9954)
+  -> PUNK (Ensemble Score: 0.9952)
+
+Genre: HARDSTYLE
+  -> HAPPY (Ensemble Score: 0.9972)
+  -> DUBSTEP (Ensemble Score: 0.9970)
+  -> INDUSTRIAL (Ensemble Score: 0.9950)
+
+Genre: HEAVY-METAL
+  -> METAL (Ensemble Score: 0.9979)
+  -> METALCORE (Ensemble Score: 0.9976)
+  -> GRUNGE (Ensemble Score: 0.9967)
+
+Genre: HIP-HOP
+  -> LATINO (Ensemble Score: 0.9986)
+  -> REGGAE (Ensemble Score: 0.9982)
+  -> REGGAETON (Ensemble Score: 0.9980)
+
+Genre: HONKY-TONK
+  -> JAZZ (Ensemble Score: 0.9952)
+  -> TANGO (Ensemble Score: 0.9896)
+  -> ACOUSTIC (Ensemble Score: 0.9810)
+
+Genre: HOUSE
+  -> EDM (Ensemble Score: 0.9997)
+  -> DANCE (Ensemble Score: 0.9978)
+  -> ALTERNATIVE (Ensemble Score: 0.9973)
+
+Genre: IDM
+  -> IRANIAN (Ensemble Score: 0.9746)
+  -> STUDY (Ensemble Score: 0.9745)
+  -> MINIMAL-TECHNO (Ensemble Score: 0.9734)
+
+Genre: INDIAN
+  -> FOLK (Ensemble Score: 0.9992)
+  -> POP-FILM (Ensemble Score: 0.9974)
+  -> INDIE (Ensemble Score: 0.9970)
+
+Genre: INDIE
+  -> INDIE-POP (Ensemble Score: 0.9998)
+  -> MALAY (Ensemble Score: 0.9974)
+  -> TURKISH (Ensemble Score: 0.9972)
+
+Genre: INDIE-POP
+  -> INDIE (Ensemble Score: 0.9998)
+  -> MALAY (Ensemble Score: 0.9983)
+  -> POP (Ensemble Score: 0.9980)
+
+Genre: INDUSTRIAL
+  -> PROGRESSIVE-HOUSE (Ensemble Score: 0.9951)
+  -> HARDSTYLE (Ensemble Score: 0.9950)
+  -> METAL (Ensemble Score: 0.9950)
+
+Genre: IRANIAN
+  -> IDM (Ensemble Score: 0.9746)
+  -> PIANO (Ensemble Score: 0.9281)
+  -> MINIMAL-TECHNO (Ensemble Score: 0.9279)
+
+Genre: J-DANCE
+  -> DANCEHALL (Ensemble Score: 0.9976)
+  -> HIP-HOP (Ensemble Score: 0.9963)
+  -> FUNK (Ensemble Score: 0.9951)
+
+Genre: J-IDOL
+  -> J-ROCK (Ensemble Score: 0.9987)
+  -> PUNK (Ensemble Score: 0.9986)
+  -> PUNK-ROCK (Ensemble Score: 0.9985)
+
+Genre: J-POP
+  -> SPANISH (Ensemble Score: 0.9988)
+  -> ROCK (Ensemble Score: 0.9987)
+  -> SWEDISH (Ensemble Score: 0.9967)
+
+Genre: J-ROCK
+  -> J-IDOL (Ensemble Score: 0.9987)
+  -> ALT-ROCK (Ensemble Score: 0.9987)
+  -> PUNK (Ensemble Score: 0.9980)
+
+Genre: JAZZ
+  -> HONKY-TONK (Ensemble Score: 0.9952)
+  -> TANGO (Ensemble Score: 0.9944)
+  -> SHOW-TUNES (Ensemble Score: 0.9897)
+
+Genre: K-POP
+  -> SWEDISH (Ensemble Score: 0.9984)
+  -> SPANISH (Ensemble Score: 0.9983)
+  -> POP (Ensemble Score: 0.9973)
+
+Genre: KIDS
+  -> FUNK (Ensemble Score: 0.9961)
+  -> DANCEHALL (Ensemble Score: 0.9949)
+  -> HIP-HOP (Ensemble Score: 0.9935)
+
+Genre: LATIN
+  -> REGGAE (Ensemble Score: 0.9997)
+  -> LATINO (Ensemble Score: 0.9996)
+  -> REGGAETON (Ensemble Score: 0.9996)
+
+Genre: LATINO
+  -> REGGAETON (Ensemble Score: 0.9999)
+  -> REGGAE (Ensemble Score: 0.9998)
+  -> LATIN (Ensemble Score: 0.9996)
+
+Genre: MALAY
+  -> SOUL (Ensemble Score: 0.9990)
+  -> POP (Ensemble Score: 0.9985)
+  -> POP-FILM (Ensemble Score: 0.9985)
+
+Genre: MANDOPOP
+  -> CANTOPOP (Ensemble Score: 0.9970)
+  -> SONGWRITER (Ensemble Score: 0.9940)
+  -> SINGER-SONGWRITER (Ensemble Score: 0.9940)
+
+Genre: METAL
+  -> GRUNGE (Ensemble Score: 0.9994)
+  -> HEAVY-METAL (Ensemble Score: 0.9979)
+  -> HARD-ROCK (Ensemble Score: 0.9958)
+
+Genre: METALCORE
+  -> HEAVY-METAL (Ensemble Score: 0.9976)
+  -> METAL (Ensemble Score: 0.9944)
+  -> GRUNGE (Ensemble Score: 0.9932)
+
+Genre: MINIMAL-TECHNO
+  -> DETROIT-TECHNO (Ensemble Score: 0.9940)
+  -> TECHNO (Ensemble Score: 0.9891)
+  -> IDM (Ensemble Score: 0.9734)
+
+Genre: MPB
+  -> R-N-B (Ensemble Score: 0.9958)
+  -> SERTANEJO (Ensemble Score: 0.9944)
+  -> SOUL (Ensemble Score: 0.9944)
+
+Genre: NEW-AGE
+  -> AMBIENT (Ensemble Score: 0.9966)
+  -> CLASSICAL (Ensemble Score: 0.9841)
+  -> PIANO (Ensemble Score: 0.9593)
+
+Genre: OPERA
+  -> ROMANCE (Ensemble Score: 0.9742)
+  -> DISNEY (Ensemble Score: 0.9591)
+  -> TANGO (Ensemble Score: 0.9535)
+
+Genre: PAGODE
+  -> SAMBA (Ensemble Score: 0.9986)
+  -> SERTANEJO (Ensemble Score: 0.9966)
+  -> MPB (Ensemble Score: 0.9913)
+
+Genre: PARTY
+  -> SKA (Ensemble Score: 0.9977)
+  -> J-IDOL (Ensemble Score: 0.9947)
+  -> PUNK-ROCK (Ensemble Score: 0.9943)
+
+Genre: PIANO
+  -> GUITAR (Ensemble Score: 0.9928)
+  -> DISNEY (Ensemble Score: 0.9904)
+  -> AMBIENT (Ensemble Score: 0.9703)
+
+Genre: POP
+  -> MALAY (Ensemble Score: 0.9985)
+  -> TURKISH (Ensemble Score: 0.9984)
+  -> SWEDISH (Ensemble Score: 0.9980)
+
+Genre: POP-FILM
+  -> MALAY (Ensemble Score: 0.9985)
+  -> SOUL (Ensemble Score: 0.9984)
+  -> FOLK (Ensemble Score: 0.9977)
+
+Genre: POWER-POP
+  -> PUNK (Ensemble Score: 0.9989)
+  -> PUNK-ROCK (Ensemble Score: 0.9988)
+  -> HARD-ROCK (Ensemble Score: 0.9979)
+
+Genre: PROGRESSIVE-HOUSE
+  -> GROOVE (Ensemble Score: 0.9965)
+  -> INDUSTRIAL (Ensemble Score: 0.9951)
+  -> HAPPY (Ensemble Score: 0.9949)
+
+Genre: PSYCH-ROCK
+  -> BLUES (Ensemble Score: 0.9952)
+  -> SWEDISH (Ensemble Score: 0.9937)
+  -> INDIE (Ensemble Score: 0.9921)
+
+Genre: PUNK
+  -> PUNK-ROCK (Ensemble Score: 0.9999)
+  -> HARD-ROCK (Ensemble Score: 0.9995)
+  -> POWER-POP (Ensemble Score: 0.9989)
+
+Genre: PUNK-ROCK
+  -> PUNK (Ensemble Score: 0.9999)
+  -> HARD-ROCK (Ensemble Score: 0.9993)
+  -> POWER-POP (Ensemble Score: 0.9988)
+
+Genre: R-N-B
+  -> BLUES (Ensemble Score: 0.9977)
+  -> SWEDISH (Ensemble Score: 0.9968)
+  -> MPB (Ensemble Score: 0.9958)
+
+Genre: REGGAE
+  -> REGGAETON (Ensemble Score: 0.9998)
+  -> LATINO (Ensemble Score: 0.9998)
+  -> LATIN (Ensemble Score: 0.9997)
+
+Genre: REGGAETON
+  -> LATINO (Ensemble Score: 0.9999)
+  -> REGGAE (Ensemble Score: 0.9998)
+  -> LATIN (Ensemble Score: 0.9996)
+
+Genre: ROCK
+  -> J-POP (Ensemble Score: 0.9987)
+  -> SPANISH (Ensemble Score: 0.9973)
+  -> ALTERNATIVE (Ensemble Score: 0.9971)
+
+Genre: ROCK-N-ROLL
+  -> BLUEGRASS (Ensemble Score: 0.9909)
+  -> FOLK (Ensemble Score: 0.9901)
+  -> BLUES (Ensemble Score: 0.9891)
+
+Genre: ROCKABILLY
+  -> SALSA (Ensemble Score: 0.9969)
+  -> BLUES (Ensemble Score: 0.9964)
+  -> FORRO (Ensemble Score: 0.9952)
+
+Genre: ROMANCE
+  -> TANGO (Ensemble Score: 0.9854)
+  -> JAZZ (Ensemble Score: 0.9826)
+  -> OPERA (Ensemble Score: 0.9742)
+
+Genre: SAD
+  -> CHILL (Ensemble Score: 0.9957)
+  -> SINGER-SONGWRITER (Ensemble Score: 0.9874)
+  -> SONGWRITER (Ensemble Score: 0.9874)
+
+Genre: SALSA
+  -> ROCKABILLY (Ensemble Score: 0.9969)
+  -> FORRO (Ensemble Score: 0.9941)
+  -> BLUES (Ensemble Score: 0.9925)
+
+Genre: SAMBA
+  -> PAGODE (Ensemble Score: 0.9986)
+  -> SERTANEJO (Ensemble Score: 0.9965)
+  -> MPB (Ensemble Score: 0.9935)
+
+Genre: SERTANEJO
+  -> PAGODE (Ensemble Score: 0.9966)
+  -> SAMBA (Ensemble Score: 0.9965)
+  -> MPB (Ensemble Score: 0.9944)
+
+Genre: SHOW-TUNES
+  -> JAZZ (Ensemble Score: 0.9897)
+  -> SONGWRITER (Ensemble Score: 0.9878)
+  -> SINGER-SONGWRITER (Ensemble Score: 0.9878)
+
+Genre: SINGER-SONGWRITER
+  -> SONGWRITER (Ensemble Score: 1.0000)
+  -> ACOUSTIC (Ensemble Score: 0.9996)
+  -> CANTOPOP (Ensemble Score: 0.9981)
+
+Genre: SKA
+  -> PARTY (Ensemble Score: 0.9977)
+  -> J-ROCK (Ensemble Score: 0.9956)
+  -> PUNK-ROCK (Ensemble Score: 0.9952)
+
+Genre: SLEEP
+  -> NEW-AGE (Ensemble Score: 0.9497)
+  -> AMBIENT (Ensemble Score: 0.9305)
+  -> IRANIAN (Ensemble Score: 0.9030)
+
+Genre: SONGWRITER
+  -> SINGER-SONGWRITER (Ensemble Score: 1.0000)
+  -> ACOUSTIC (Ensemble Score: 0.9996)
+  -> CANTOPOP (Ensemble Score: 0.9981)
+
+Genre: SOUL
+  -> MALAY (Ensemble Score: 0.9990)
+  -> POP-FILM (Ensemble Score: 0.9984)
+  -> FOLK (Ensemble Score: 0.9976)
+
+Genre: SPANISH
+  -> J-POP (Ensemble Score: 0.9988)
+  -> K-POP (Ensemble Score: 0.9983)
+  -> SWEDISH (Ensemble Score: 0.9974)
+
+Genre: STUDY
+  -> IDM (Ensemble Score: 0.9745)
+  -> PIANO (Ensemble Score: 0.9689)
+  -> GUITAR (Ensemble Score: 0.9658)
+
+Genre: SWEDISH
+  -> COUNTRY (Ensemble Score: 0.9990)
+  -> K-POP (Ensemble Score: 0.9984)
+  -> POP (Ensemble Score: 0.9980)
+
+Genre: SYNTH-POP
+  -> DISCO (Ensemble Score: 0.9987)
+  -> ROCK (Ensemble Score: 0.9964)
+  -> ALTERNATIVE (Ensemble Score: 0.9963)
+
+Genre: TANGO
+  -> JAZZ (Ensemble Score: 0.9944)
+  -> HONKY-TONK (Ensemble Score: 0.9896)
+  -> ROMANCE (Ensemble Score: 0.9854)
+
+Genre: TECHNO
+  -> DETROIT-TECHNO (Ensemble Score: 0.9929)
+  -> CLUB (Ensemble Score: 0.9896)
+  -> MINIMAL-TECHNO (Ensemble Score: 0.9891)
+
+Genre: TRANCE
+  -> DRUM-AND-BASS (Ensemble Score: 0.9967)
+  -> BREAKBEAT (Ensemble Score: 0.9923)
+  -> HAPPY (Ensemble Score: 0.9906)
+
+Genre: TRIP-HOP
+  -> CLUB (Ensemble Score: 0.9905)
+  -> ANIME (Ensemble Score: 0.9899)
+  -> ELECTRONIC (Ensemble Score: 0.9898)
+
+Genre: TURKISH
+  -> POP (Ensemble Score: 0.9984)
+  -> INDIE-POP (Ensemble Score: 0.9980)
+  -> INDIE (Ensemble Score: 0.9972)
+
+Genre: WORLD-MUSIC
+  -> GOSPEL (Ensemble Score: 0.9867)
+  -> BRAZIL (Ensemble Score: 0.9771)
+  -> GOTH (Ensemble Score: 0.9753)
+

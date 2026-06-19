@@ -1,0 +1,573 @@
+--- ENGINEERED GENRE SIMILARITY (Top 3 Matches) ---
+Calculated using standard Cosine Similarity on Genre Feature Centroids
+
+Genre: ACOUSTIC
+  -> SINGER-SONGWRITER (Score: 0.9976)
+  -> SONGWRITER (Score: 0.9976)
+  -> SHOW-TUNES (Score: 0.9870)
+
+Genre: AFROBEAT
+  -> PSYCH-ROCK (Score: 0.9843)
+  -> ANIME (Score: 0.9816)
+  -> DISCO (Score: 0.9812)
+
+Genre: ALT-ROCK
+  -> ALTERNATIVE (Score: 0.9991)
+  -> PUNK (Score: 0.9985)
+  -> HARD-ROCK (Score: 0.9984)
+
+Genre: ALTERNATIVE
+  -> ALT-ROCK (Score: 0.9991)
+  -> J-ROCK (Score: 0.9980)
+  -> EDM (Score: 0.9979)
+
+Genre: AMBIENT
+  -> NEW-AGE (Score: 0.9976)
+  -> CLASSICAL (Score: 0.9796)
+  -> PIANO (Score: 0.9729)
+
+Genre: ANIME
+  -> ELECTRONIC (Score: 0.9913)
+  -> CLUB (Score: 0.9893)
+  -> TRIP-HOP (Score: 0.9883)
+
+Genre: BLACK-METAL
+  -> GRINDCORE (Score: 0.9969)
+  -> DEATH-METAL (Score: 0.9887)
+  -> TRANCE (Score: 0.9816)
+
+Genre: BLUEGRASS
+  -> ROCK-N-ROLL (Score: 0.9916)
+  -> CHILDREN (Score: 0.9834)
+  -> FOLK (Score: 0.9814)
+
+Genre: BLUES
+  -> R-N-B (Score: 0.9969)
+  -> SOUL (Score: 0.9962)
+  -> ROCKABILLY (Score: 0.9947)
+
+Genre: BRAZIL
+  -> TURKISH (Score: 0.9952)
+  -> COUNTRY (Score: 0.9939)
+  -> POP (Score: 0.9936)
+
+Genre: BREAKBEAT
+  -> CLUB (Score: 0.9938)
+  -> DRUM-AND-BASS (Score: 0.9933)
+  -> TRANCE (Score: 0.9918)
+
+Genre: BRITISH
+  -> GERMAN (Score: 0.9899)
+  -> FRENCH (Score: 0.9860)
+  -> INDIE (Score: 0.9836)
+
+Genre: CANTOPOP
+  -> MANDOPOP (Score: 0.9946)
+  -> SONGWRITER (Score: 0.9945)
+  -> SINGER-SONGWRITER (Score: 0.9945)
+
+Genre: CHICAGO-HOUSE
+  -> BREAKBEAT (Score: 0.9886)
+  -> TRIP-HOP (Score: 0.9861)
+  -> TECHNO (Score: 0.9861)
+
+Genre: CHILDREN
+  -> ROCK-N-ROLL (Score: 0.9879)
+  -> FOLK (Score: 0.9855)
+  -> SOUL (Score: 0.9854)
+
+Genre: CHILL
+  -> SAD (Score: 0.9924)
+  -> SINGER-SONGWRITER (Score: 0.9814)
+  -> SONGWRITER (Score: 0.9814)
+
+Genre: CLASSICAL
+  -> NEW-AGE (Score: 0.9842)
+  -> AMBIENT (Score: 0.9796)
+  -> GUITAR (Score: 0.9686)
+
+Genre: CLUB
+  -> ELECTRONIC (Score: 0.9945)
+  -> BREAKBEAT (Score: 0.9938)
+  -> DEEP-HOUSE (Score: 0.9901)
+
+Genre: COMEDY
+  -> SHOW-TUNES (Score: 0.8374)
+  -> PAGODE (Score: 0.8009)
+  -> SAMBA (Score: 0.7986)
+
+Genre: COUNTRY
+  -> SWEDISH (Score: 0.9990)
+  -> POP (Score: 0.9972)
+  -> K-POP (Score: 0.9972)
+
+Genre: DANCE
+  -> HOUSE (Score: 0.9981)
+  -> EDM (Score: 0.9969)
+  -> SYNTH-POP (Score: 0.9967)
+
+Genre: DANCEHALL
+  -> REGGAE (Score: 0.9979)
+  -> J-DANCE (Score: 0.9979)
+  -> LATINO (Score: 0.9975)
+
+Genre: DEATH-METAL
+  -> BLACK-METAL (Score: 0.9887)
+  -> HAPPY (Score: 0.9853)
+  -> DRUM-AND-BASS (Score: 0.9847)
+
+Genre: DEEP-HOUSE
+  -> ELECTRONIC (Score: 0.9965)
+  -> PROGRESSIVE-HOUSE (Score: 0.9935)
+  -> GROOVE (Score: 0.9931)
+
+Genre: DETROIT-TECHNO
+  -> MINIMAL-TECHNO (Score: 0.9932)
+  -> TECHNO (Score: 0.9916)
+  -> CHICAGO-HOUSE (Score: 0.9834)
+
+Genre: DISCO
+  -> SYNTH-POP (Score: 0.9982)
+  -> LATIN (Score: 0.9973)
+  -> REGGAE (Score: 0.9963)
+
+Genre: DISNEY
+  -> GUITAR (Score: 0.9939)
+  -> PIANO (Score: 0.9869)
+  -> CLASSICAL (Score: 0.9629)
+
+Genre: DRUM-AND-BASS
+  -> TRANCE (Score: 0.9967)
+  -> HAPPY (Score: 0.9953)
+  -> BREAKBEAT (Score: 0.9933)
+
+Genre: DUB
+  -> GROOVE (Score: 0.9971)
+  -> EDM (Score: 0.9967)
+  -> DUBSTEP (Score: 0.9956)
+
+Genre: DUBSTEP
+  -> HARDSTYLE (Score: 0.9975)
+  -> DUB (Score: 0.9956)
+  -> PROGRESSIVE-HOUSE (Score: 0.9934)
+
+Genre: EDM
+  -> HOUSE (Score: 0.9998)
+  -> ALTERNATIVE (Score: 0.9979)
+  -> DANCE (Score: 0.9969)
+
+Genre: ELECTRO
+  -> EMO (Score: 0.9978)
+  -> HIP-HOP (Score: 0.9971)
+  -> SPANISH (Score: 0.9948)
+
+Genre: ELECTRONIC
+  -> DEEP-HOUSE (Score: 0.9965)
+  -> CLUB (Score: 0.9945)
+  -> ANIME (Score: 0.9913)
+
+Genre: EMO
+  -> ELECTRO (Score: 0.9978)
+  -> ALTERNATIVE (Score: 0.9961)
+  -> EDM (Score: 0.9955)
+
+Genre: FOLK
+  -> INDIAN (Score: 0.9988)
+  -> SOUL (Score: 0.9946)
+  -> POP-FILM (Score: 0.9940)
+
+Genre: FORRO
+  -> SALSA (Score: 0.9925)
+  -> SERTANEJO (Score: 0.9886)
+  -> ROCKABILLY (Score: 0.9884)
+
+Genre: FRENCH
+  -> INDIE (Score: 0.9914)
+  -> INDIE-POP (Score: 0.9910)
+  -> TURKISH (Score: 0.9907)
+
+Genre: FUNK
+  -> K-POP (Score: 0.9959)
+  -> POP (Score: 0.9957)
+  -> TURKISH (Score: 0.9938)
+
+Genre: GARAGE
+  -> GOTH (Score: 0.9969)
+  -> GROOVE (Score: 0.9942)
+  -> ALT-ROCK (Score: 0.9920)
+
+Genre: GERMAN
+  -> BRITISH (Score: 0.9899)
+  -> ANIME (Score: 0.9860)
+  -> FRENCH (Score: 0.9812)
+
+Genre: GOSPEL
+  -> BRAZIL (Score: 0.9907)
+  -> INDIE-POP (Score: 0.9834)
+  -> TURKISH (Score: 0.9831)
+
+Genre: GOTH
+  -> GROOVE (Score: 0.9975)
+  -> GARAGE (Score: 0.9969)
+  -> ALT-ROCK (Score: 0.9961)
+
+Genre: GRINDCORE
+  -> BLACK-METAL (Score: 0.9969)
+  -> DEATH-METAL (Score: 0.9785)
+  -> TRANCE (Score: 0.9729)
+
+Genre: GROOVE
+  -> GOTH (Score: 0.9975)
+  -> DUB (Score: 0.9971)
+  -> PROGRESSIVE-HOUSE (Score: 0.9954)
+
+Genre: GRUNGE
+  -> METAL (Score: 0.9995)
+  -> HEAVY-METAL (Score: 0.9976)
+  -> HARDCORE (Score: 0.9959)
+
+Genre: GUITAR
+  -> DISNEY (Score: 0.9939)
+  -> PIANO (Score: 0.9887)
+  -> CLASSICAL (Score: 0.9686)
+
+Genre: HAPPY
+  -> HARDSTYLE (Score: 0.9961)
+  -> DRUM-AND-BASS (Score: 0.9953)
+  -> PROGRESSIVE-HOUSE (Score: 0.9952)
+
+Genre: HARD-ROCK
+  -> PUNK (Score: 0.9996)
+  -> PUNK-ROCK (Score: 0.9994)
+  -> ALT-ROCK (Score: 0.9984)
+
+Genre: HARDCORE
+  -> HARD-ROCK (Score: 0.9980)
+  -> PUNK (Score: 0.9970)
+  -> PUNK-ROCK (Score: 0.9967)
+
+Genre: HARDSTYLE
+  -> DUBSTEP (Score: 0.9975)
+  -> HAPPY (Score: 0.9961)
+  -> INDUSTRIAL (Score: 0.9949)
+
+Genre: HEAVY-METAL
+  -> METAL (Score: 0.9983)
+  -> METALCORE (Score: 0.9979)
+  -> GRUNGE (Score: 0.9976)
+
+Genre: HIP-HOP
+  -> LATINO (Score: 0.9986)
+  -> REGGAE (Score: 0.9982)
+  -> REGGAETON (Score: 0.9981)
+
+Genre: HONKY-TONK
+  -> JAZZ (Score: 0.9929)
+  -> SHOW-TUNES (Score: 0.9794)
+  -> TANGO (Score: 0.9734)
+
+Genre: HOUSE
+  -> EDM (Score: 0.9998)
+  -> DANCE (Score: 0.9981)
+  -> ALTERNATIVE (Score: 0.9977)
+
+Genre: IDM
+  -> IRANIAN (Score: 0.9795)
+  -> STUDY (Score: 0.9641)
+  -> MINIMAL-TECHNO (Score: 0.9554)
+
+Genre: INDIAN
+  -> FOLK (Score: 0.9988)
+  -> POP-FILM (Score: 0.9950)
+  -> MALAY (Score: 0.9940)
+
+Genre: INDIE
+  -> INDIE-POP (Score: 0.9997)
+  -> POP (Score: 0.9967)
+  -> TURKISH (Score: 0.9966)
+
+Genre: INDIE-POP
+  -> INDIE (Score: 0.9997)
+  -> POP (Score: 0.9977)
+  -> TURKISH (Score: 0.9976)
+
+Genre: INDUSTRIAL
+  -> PROGRESSIVE-HOUSE (Score: 0.9962)
+  -> HARDSTYLE (Score: 0.9949)
+  -> METAL (Score: 0.9948)
+
+Genre: IRANIAN
+  -> IDM (Score: 0.9795)
+  -> MINIMAL-TECHNO (Score: 0.9214)
+  -> STUDY (Score: 0.9188)
+
+Genre: J-DANCE
+  -> DANCEHALL (Score: 0.9979)
+  -> HIP-HOP (Score: 0.9961)
+  -> REGGAE (Score: 0.9951)
+
+Genre: J-IDOL
+  -> J-ROCK (Score: 0.9980)
+  -> ALT-ROCK (Score: 0.9956)
+  -> PARTY (Score: 0.9953)
+
+Genre: J-POP
+  -> SPANISH (Score: 0.9976)
+  -> SWEDISH (Score: 0.9966)
+  -> K-POP (Score: 0.9963)
+
+Genre: J-ROCK
+  -> ALT-ROCK (Score: 0.9982)
+  -> ALTERNATIVE (Score: 0.9980)
+  -> J-IDOL (Score: 0.9980)
+
+Genre: JAZZ
+  -> HONKY-TONK (Score: 0.9929)
+  -> SHOW-TUNES (Score: 0.9879)
+  -> TANGO (Score: 0.9875)
+
+Genre: K-POP
+  -> SPANISH (Score: 0.9983)
+  -> SWEDISH (Score: 0.9974)
+  -> COUNTRY (Score: 0.9972)
+
+Genre: KIDS
+  -> DANCEHALL (Score: 0.9952)
+  -> FUNK (Score: 0.9934)
+  -> HIP-HOP (Score: 0.9928)
+
+Genre: LATIN
+  -> LATINO (Score: 0.9997)
+  -> REGGAE (Score: 0.9997)
+  -> REGGAETON (Score: 0.9997)
+
+Genre: LATINO
+  -> REGGAETON (Score: 0.9999)
+  -> REGGAE (Score: 0.9998)
+  -> LATIN (Score: 0.9997)
+
+Genre: MALAY
+  -> SOUL (Score: 0.9990)
+  -> POP-FILM (Score: 0.9971)
+  -> INDIE-POP (Score: 0.9965)
+
+Genre: MANDOPOP
+  -> CANTOPOP (Score: 0.9946)
+  -> INDIAN (Score: 0.9936)
+  -> FOLK (Score: 0.9915)
+
+Genre: METAL
+  -> GRUNGE (Score: 0.9995)
+  -> HEAVY-METAL (Score: 0.9983)
+  -> HARDCORE (Score: 0.9963)
+
+Genre: METALCORE
+  -> HEAVY-METAL (Score: 0.9979)
+  -> METAL (Score: 0.9954)
+  -> GRUNGE (Score: 0.9948)
+
+Genre: MINIMAL-TECHNO
+  -> DETROIT-TECHNO (Score: 0.9932)
+  -> TECHNO (Score: 0.9868)
+  -> CHICAGO-HOUSE (Score: 0.9614)
+
+Genre: MPB
+  -> R-N-B (Score: 0.9944)
+  -> SOUL (Score: 0.9939)
+  -> BLUES (Score: 0.9923)
+
+Genre: NEW-AGE
+  -> AMBIENT (Score: 0.9976)
+  -> CLASSICAL (Score: 0.9842)
+  -> PIANO (Score: 0.9622)
+
+Genre: OPERA
+  -> ROMANCE (Score: 0.9795)
+  -> TANGO (Score: 0.9605)
+  -> DISNEY (Score: 0.9516)
+
+Genre: PAGODE
+  -> SAMBA (Score: 0.9977)
+  -> SERTANEJO (Score: 0.9943)
+  -> FORRO (Score: 0.9783)
+
+Genre: PARTY
+  -> SKA (Score: 0.9983)
+  -> J-IDOL (Score: 0.9953)
+  -> J-ROCK (Score: 0.9951)
+
+Genre: PIANO
+  -> GUITAR (Score: 0.9887)
+  -> DISNEY (Score: 0.9869)
+  -> AMBIENT (Score: 0.9729)
+
+Genre: POP
+  -> TURKISH (Score: 0.9987)
+  -> INDIE-POP (Score: 0.9977)
+  -> COUNTRY (Score: 0.9972)
+
+Genre: POP-FILM
+  -> MALAY (Score: 0.9971)
+  -> SOUL (Score: 0.9966)
+  -> INDIAN (Score: 0.9950)
+
+Genre: POWER-POP
+  -> PUNK (Score: 0.9991)
+  -> PUNK-ROCK (Score: 0.9990)
+  -> HARD-ROCK (Score: 0.9982)
+
+Genre: PROGRESSIVE-HOUSE
+  -> INDUSTRIAL (Score: 0.9962)
+  -> GROOVE (Score: 0.9954)
+  -> HAPPY (Score: 0.9952)
+
+Genre: PSYCH-ROCK
+  -> COUNTRY (Score: 0.9944)
+  -> SWEDISH (Score: 0.9939)
+  -> BLUES (Score: 0.9926)
+
+Genre: PUNK
+  -> PUNK-ROCK (Score: 0.9999)
+  -> HARD-ROCK (Score: 0.9996)
+  -> POWER-POP (Score: 0.9991)
+
+Genre: PUNK-ROCK
+  -> PUNK (Score: 0.9999)
+  -> HARD-ROCK (Score: 0.9994)
+  -> POWER-POP (Score: 0.9990)
+
+Genre: R-N-B
+  -> BLUES (Score: 0.9969)
+  -> SOUL (Score: 0.9948)
+  -> MPB (Score: 0.9944)
+
+Genre: REGGAE
+  -> REGGAETON (Score: 0.9998)
+  -> LATINO (Score: 0.9998)
+  -> LATIN (Score: 0.9997)
+
+Genre: REGGAETON
+  -> LATINO (Score: 0.9999)
+  -> REGGAE (Score: 0.9998)
+  -> LATIN (Score: 0.9997)
+
+Genre: ROCK
+  -> SYNTH-POP (Score: 0.9969)
+  -> ALTERNATIVE (Score: 0.9965)
+  -> J-ROCK (Score: 0.9963)
+
+Genre: ROCK-N-ROLL
+  -> BLUEGRASS (Score: 0.9916)
+  -> CHILDREN (Score: 0.9879)
+  -> FOLK (Score: 0.9856)
+
+Genre: ROCKABILLY
+  -> BLUES (Score: 0.9947)
+  -> R-N-B (Score: 0.9935)
+  -> POP-FILM (Score: 0.9894)
+
+Genre: ROMANCE
+  -> TANGO (Score: 0.9833)
+  -> OPERA (Score: 0.9795)
+  -> JAZZ (Score: 0.9621)
+
+Genre: SAD
+  -> CHILL (Score: 0.9924)
+  -> SINGER-SONGWRITER (Score: 0.9844)
+  -> SONGWRITER (Score: 0.9844)
+
+Genre: SALSA
+  -> FORRO (Score: 0.9925)
+  -> ROCKABILLY (Score: 0.9858)
+  -> SAMBA (Score: 0.9824)
+
+Genre: SAMBA
+  -> PAGODE (Score: 0.9977)
+  -> SERTANEJO (Score: 0.9961)
+  -> MPB (Score: 0.9864)
+
+Genre: SERTANEJO
+  -> SAMBA (Score: 0.9961)
+  -> PAGODE (Score: 0.9943)
+  -> FORRO (Score: 0.9886)
+
+Genre: SHOW-TUNES
+  -> JAZZ (Score: 0.9879)
+  -> ACOUSTIC (Score: 0.9870)
+  -> SINGER-SONGWRITER (Score: 0.9854)
+
+Genre: SINGER-SONGWRITER
+  -> SONGWRITER (Score: 1.0000)
+  -> ACOUSTIC (Score: 0.9976)
+  -> CANTOPOP (Score: 0.9945)
+
+Genre: SKA
+  -> PARTY (Score: 0.9983)
+  -> J-ROCK (Score: 0.9958)
+  -> POWER-POP (Score: 0.9950)
+
+Genre: SLEEP
+  -> NEW-AGE (Score: 0.9617)
+  -> AMBIENT (Score: 0.9598)
+  -> PIANO (Score: 0.9208)
+
+Genre: SONGWRITER
+  -> SINGER-SONGWRITER (Score: 1.0000)
+  -> ACOUSTIC (Score: 0.9976)
+  -> CANTOPOP (Score: 0.9945)
+
+Genre: SOUL
+  -> MALAY (Score: 0.9990)
+  -> POP-FILM (Score: 0.9966)
+  -> BLUES (Score: 0.9962)
+
+Genre: SPANISH
+  -> K-POP (Score: 0.9983)
+  -> J-POP (Score: 0.9976)
+  -> COUNTRY (Score: 0.9952)
+
+Genre: STUDY
+  -> IDM (Score: 0.9641)
+  -> PIANO (Score: 0.9329)
+  -> GUITAR (Score: 0.9318)
+
+Genre: SWEDISH
+  -> COUNTRY (Score: 0.9990)
+  -> K-POP (Score: 0.9974)
+  -> POP (Score: 0.9966)
+
+Genre: SYNTH-POP
+  -> DISCO (Score: 0.9982)
+  -> ROCK (Score: 0.9969)
+  -> DANCE (Score: 0.9967)
+
+Genre: TANGO
+  -> JAZZ (Score: 0.9875)
+  -> ROMANCE (Score: 0.9833)
+  -> HONKY-TONK (Score: 0.9734)
+
+Genre: TECHNO
+  -> DETROIT-TECHNO (Score: 0.9916)
+  -> TRANCE (Score: 0.9883)
+  -> CLUB (Score: 0.9878)
+
+Genre: TRANCE
+  -> DRUM-AND-BASS (Score: 0.9967)
+  -> BREAKBEAT (Score: 0.9918)
+  -> CLUB (Score: 0.9899)
+
+Genre: TRIP-HOP
+  -> CLUB (Score: 0.9894)
+  -> ANIME (Score: 0.9883)
+  -> ELECTRONIC (Score: 0.9871)
+
+Genre: TURKISH
+  -> POP (Score: 0.9987)
+  -> INDIE-POP (Score: 0.9976)
+  -> INDIE (Score: 0.9966)
+
+Genre: WORLD-MUSIC
+  -> ANIME (Score: 0.9730)
+  -> GOTH (Score: 0.9729)
+  -> EMO (Score: 0.9719)
+
