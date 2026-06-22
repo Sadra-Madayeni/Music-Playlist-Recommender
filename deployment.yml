@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: data-pipeline-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: data-pipeline
+  template:
+    metadata:
+      labels:
+        app: data-pipeline
+    spec:
+      containers:
+      - name: data-pipeline-container
+        image: data-pipeline-image:latest
+        imagePullPolicy: IfNotPresent
