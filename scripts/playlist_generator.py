@@ -4,8 +4,13 @@ import torch
 import os
 import joblib
 import sys
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.cluster import DBSCAN
+from sklearn.decomposition import PCA
 from sklearn.metrics.pairwise import cosine_similarity
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scripts.recommender_model import SessionRecommenderLSTM
 
 def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_filepath):
@@ -15,16 +20,18 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
     df = pd.read_csv(dataset_filepath)
     
     # Extract query tracks
-    query_df = df[df['track_id'].isin(query_track_ids)]
+    query_df = df[df['track_id'].isin(query_track_ids)].copy()
     
     if query_df.empty:
         print("No valid tracks found for the query.")
         return
         
-    print("\n--- YOUR RECENTLY PLAYED QUERY ---")
+    output_lines = []
+    output_lines.append("--- YOUR RECENTLY PLAYED QUERY ---")
     for _, row in query_df.iterrows():
-        print(f"- {row['track_name']} by {row['artists']} (Genre: {row['track_genre']})")
-    print("----------------------------------\n")
+        output_lines.append(f"- {row['track_name']} by {row['artists']} (Genre: {row['track_genre']})")
+    output_lines.append(f"Total Tracks in Query: {len(query_df)}")
+    output_lines.append("----------------------------------\n")
     
     feature_cols = [
         "danceability", "energy", "valence", "acousticness", 
@@ -40,88 +47,145 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
     model.load_state_dict(torch.load(model_filepath, weights_only=True))
     model.eval()
     
-    # Prepare query sequence
+    # Prepare query sequence for RNN
     query_features = query_df[feature_cols].fillna(0)
     scaled_query = scaler.transform(query_features)
     
-    # Pad or truncate to seq_length of 5 (as trained)
+    # Pad or truncate to seq_length of 5 for the general RNN prediction
     seq_length = 5
     if len(scaled_query) < seq_length:
         pad = np.zeros((seq_length - len(scaled_query), len(feature_cols)))
-        scaled_query = np.vstack([pad, scaled_query])
-    elif len(scaled_query) > seq_length:
-        scaled_query = scaled_query[-seq_length:]
+        rnn_input = np.vstack([pad, scaled_query])
+    else:
+        rnn_input = scaled_query[-seq_length:]
         
-    seq_tensor = torch.tensor([scaled_query], dtype=torch.float32)
+    seq_tensor = torch.tensor([rnn_input], dtype=torch.float32)
     
-    # Predict preference vector
+    # Predict overall preference vector
     with torch.no_grad():
         pref_vector = model(seq_tensor).numpy()[0]
         
-    print("Predicted User Preference Vector based on session history.")
+    # --- DYNAMIC QUERY CLUSTERING USING KMEANS & SILHOUETTE SCORE ---
+    print("Applying KMeans to analyze query diversity...")
+    from sklearn.cluster import KMeans
+    from sklearn.metrics import silhouette_score
     
-    # Calculate similarity across entire dataset
+    max_possible_k = min(6, len(scaled_query) - 1)
+    best_k = 1
+    best_score = -1
+    
+    if max_possible_k >= 2:
+        for k in range(2, max_possible_k + 1):
+            kmeans_temp = KMeans(n_clusters=k, random_state=42, n_init=5)
+            labels = kmeans_temp.fit_predict(scaled_query)
+            # Only consider valid silhouette scores
+            if len(set(labels)) > 1:
+                score = silhouette_score(scaled_query, labels)
+                if score > best_score:
+                    best_score = score
+                    best_k = k
+                    
+    # If the score is very low, it implies a single monolithic cluster is better
+    if best_score < 0.1 and max_possible_k >= 2:
+        best_k = 1
+        
+    print(f"Optimal K for user query: {best_k} (Silhouette Score: {best_score:.4f})")
+    
+    kmeans_final = KMeans(n_clusters=best_k, random_state=42, n_init=5)
+    query_clusters = kmeans_final.fit_predict(scaled_query)
+    query_df['query_cluster'] = query_clusters
+    
+    # Generate PCA Plot for visualization
+    if len(scaled_query) > 2:
+        pca = PCA(n_components=2)
+        pca_result = pca.fit_transform(scaled_query)
+        plt.figure(figsize=(10, 6))
+        sns.scatterplot(x=pca_result[:, 0], y=pca_result[:, 1], hue=query_clusters, palette='viridis', s=100)
+        plt.title("KMeans Clustering of User's Query Tracks (PCA Projection)")
+        plt.xlabel("PCA Component 1")
+        plt.ylabel("PCA Component 2")
+        
+        plot_path = os.path.join(os.path.dirname(dataset_filepath), "query_clusters.png")
+        plt.savefig(plot_path)
+        plt.close()
+        print(f"Saved query clustering plot to {plot_path}")
+    
+    # Calculate similarity across entire dataset for general mix
     print("Finding closest matches in the database...")
     all_features_scaled = scaler.transform(df[feature_cols].fillna(0))
     similarities = cosine_similarity([pref_vector], all_features_scaled)[0]
     
     # Add similarities to df
     df['similarity_score'] = similarities
-    
-    # Filter out songs already in query
     candidates = df[~df['track_id'].isin(query_track_ids)].copy()
     
     # --- Generate Mixes ---
-    print("\n================ GENERATING MIXES ================\n")
+    output_lines.append("\n================ GENERATING MIXES ================\n")
     
     # 1. General Top Recommendations (The "For You" Mix)
     for_you = candidates.sort_values(by='similarity_score', ascending=False).head(10)
-    print("* The 'For You' Mix (Closest matches to your overall vibe):")
+    output_lines.append("* The 'For You' Mix (Based on your overall session):")
     for _, row in for_you.iterrows():
-        print(f"  - {row['track_name']} by {row['artists']} (Score: {row['similarity_score']:.2f})")
-    print()
+        output_lines.append(f"  - {row['track_name']} by {row['artists']} (Score: {row['similarity_score']:.2f})")
+    output_lines.append("")
     
-    # 2. Mood Mix (Based on Vibe Cluster)
-    # We find the dominant cluster in the query
-    if 'vibe_cluster_name' in query_df.columns:
-        dominant_mood = query_df['vibe_cluster_name'].mode()[0]
-        mood_mix = candidates[candidates['vibe_cluster_name'] == dominant_mood].sort_values(by='similarity_score', ascending=False).head(10)
-        print(f"* The '{dominant_mood}' Mix:")
-        for _, row in mood_mix.iterrows():
-            print(f"  - {row['track_name']} by {row['artists']} (Score: {row['similarity_score']:.2f})")
-        print()
+    # 2. Dynamic Cluster Mixes
+    unique_clusters = set(query_clusters)
+    num_clusters = len(unique_clusters)
+    output_lines.append(f"--- Detected {num_clusters} distinct tastes/vibes in your query ---")
+    
+    for c_id in sorted(list(unique_clusters)):
+        cluster_tracks = query_df[query_df['query_cluster'] == c_id]
+        if c_id == -1:
+            mix_name = "The 'Eclectic / Diverse' Mix (Noise points)"
+        else:
+            # Find dominant genre of this cluster to name it
+            dominant_genre = cluster_tracks['track_genre'].mode()[0]
+            mix_name = f"The '{dominant_genre.title()} & Similar' Mix (Cluster {c_id})"
+            
+        # Compute sub-preference by averaging features of this cluster
+        sub_features = cluster_tracks[feature_cols].fillna(0)
+        sub_scaled = scaler.transform(sub_features)
+        sub_centroid = np.mean(sub_scaled, axis=0)
         
-    # 3. Genre Mix (Using similar_genre columns)
-    # Get the most common genre in the query
-    dominant_genre = query_df['track_genre'].mode()[0]
-    genre_mix = candidates[
-        (candidates['track_genre'] == dominant_genre) | 
-        (candidates['similar_genre_1'] == dominant_genre) |
-        (candidates['similar_genre_2'] == dominant_genre) |
-        (candidates['similar_genre_3'] == dominant_genre)
-    ].sort_values(by='similarity_score', ascending=False).head(10)
+        # Calculate similarity to this specific centroid
+        sub_sims = cosine_similarity([sub_centroid], all_features_scaled)[0]
+        # Assign only the subset that corresponds to candidates
+        candidates['sub_sim'] = sub_sims[~df['track_id'].isin(query_track_ids)]
+        
+        cluster_mix = candidates.sort_values(by='sub_sim', ascending=False).head(10)
+        
+        output_lines.append(f"\n* {mix_name}:")
+        for _, row in cluster_mix.iterrows():
+            output_lines.append(f"  - {row['track_name']} by {row['artists']} (Genre: {row['track_genre']}, Sub-Score: {row['sub_sim']:.2f})")
     
-    print(f"* The '{dominant_genre.title()}' Mix (Including related genres):")
-    for _, row in genre_mix.iterrows():
-        print(f"  - {row['track_name']} by {row['artists']} (Genre: {row['track_genre']}, Score: {row['similarity_score']:.2f})")
-    print()
+    output_lines.append("")
 
-    print("--- Playlist Generation Complete ---")
+    # Save to file
+    out_file = os.path.join(os.path.dirname(dataset_filepath), "generated_mixes.txt")
+    with open(out_file, "w", encoding="utf-8") as f:
+        f.write("\n".join(output_lines))
+
+    print(f"--- Playlist Generation Complete. Check {out_file} ---")
 
 if __name__ == "__main__":
     CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
     PROJECT_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, ".."))
     
-    # Mock query: Let's assume the user played some specific songs. 
-    # (These IDs would normally come from a front-end)
-    # I will randomly pick 5 acoustic/singer-songwriter tracks as a test
-    # (Since I don't know exact IDs, I will fetch 5 acoustic IDs from the file dynamically for the test)
-    
-    df_temp = pd.read_csv(os.path.join(PROJECT_ROOT, "clustered_dataset.csv"))
-    acoustic_tracks = df_temp[df_temp['track_genre'] == 'acoustic'].head(5)['track_id'].tolist()
+    query_file = os.path.join(PROJECT_ROOT, "query.txt")
+    if os.path.exists(query_file):
+        with open(query_file, "r") as f:
+            query_tracks = [line.strip() for line in f if line.strip()]
+    else:
+        print(f"No {query_file} found. Creating a default one.")
+        df_temp = pd.read_csv(os.path.join(PROJECT_ROOT, "clustered_dataset.csv"))
+        query_tracks = df_temp[df_temp['track_genre'] == 'acoustic'].head(5)['track_id'].tolist()
+        with open(query_file, "w") as f:
+            for t in query_tracks:
+                f.write(t + "\n")
     
     generate_mixes(
-        query_track_ids=acoustic_tracks,
+        query_track_ids=query_tracks,
         dataset_filepath=os.path.join(PROJECT_ROOT, "clustered_dataset.csv"),
         model_filepath=os.path.join(PROJECT_ROOT, "database", "recommender_model.pth"),
         scaler_filepath=os.path.join(PROJECT_ROOT, "database", "clustering_model.pkl")

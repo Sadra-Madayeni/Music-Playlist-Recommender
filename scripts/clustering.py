@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import os
-from sklearn.cluster import KMeans
+from sklearn.cluster import DBSCAN
 from sklearn.preprocessing import StandardScaler
 import joblib
 
@@ -25,20 +25,44 @@ def run_clustering(input_filepath, output_filepath, model_out_path):
     scaler = StandardScaler()
     scaled_features = scaler.fit_transform(df[available_features].fillna(0))
     
-    # Run K-Means
-    n_clusters = 12 # Let's define 12 distinct vibe clusters
-    print(f"Running K-Means clustering with k={n_clusters}...")
-    kmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)
+    # Use a sample to find the optimal number of clusters via Silhouette Score
+    print("Evaluating optimal K for KMeans using Silhouette Score on a sample...")
+    np.random.seed(42)
+    sample_size = min(10000, len(scaled_features))
+    idx = np.random.choice(len(scaled_features), sample_size, replace=False)
+    sample_features = scaled_features[idx]
+    
+    best_k = 12
+    best_score = -1
+    for k in range(5, 16):
+        from sklearn.cluster import KMeans
+        from sklearn.metrics import silhouette_score
+        kmeans_temp = KMeans(n_clusters=k, random_state=42, n_init=5)
+        labels = kmeans_temp.fit_predict(sample_features)
+        score = silhouette_score(sample_features, labels)
+        if score > best_score:
+            best_score = score
+            best_k = k
+    print(f"Optimal K found: {best_k} (Silhouette Score: {best_score:.4f})")
+    
+    # Fit KMeans with the optimal K
+    print(f"Fitting KMeans model with K={best_k} on full dataset...")
+    kmeans = KMeans(n_clusters=best_k, random_state=42, n_init=10)
     df['vibe_cluster'] = kmeans.fit_predict(scaled_features)
     
     # Analyze the clusters to give them descriptive names
+    unique_clusters = sorted(df['vibe_cluster'].unique())
+    print(f"KMeans found {len(unique_clusters)} clusters.")
     print("Analyzing cluster centroids to generate descriptive names...")
-    centroids = scaler.inverse_transform(kmeans.cluster_centers_)
-    cluster_df = pd.DataFrame(centroids, columns=available_features)
     
     cluster_names = {}
-    for i in range(n_clusters):
-        row = cluster_df.iloc[i]
+    
+    for i in unique_clusters:
+        # Calculate centroid for cluster i
+        cluster_points = scaled_features[df['vibe_cluster'] == i]
+        centroid = cluster_points.mean(axis=0)
+        row = pd.Series(scaler.inverse_transform([centroid])[0], index=available_features)
+        
         # Very simple naming logic based on dominant features
         if row['energy'] > 0.7 and row['electronic_index'] > 0.5:
             name = "High-Energy Electronic"
