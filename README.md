@@ -1,4 +1,4 @@
-# Music Recommendation Engine Pipeline
+# Music Playlist Recommendation Engine Pipeline
 
 An end-to-end automated machine learning pipeline built with Python, Pandas, Scikit-learn, and PyTorch, orchestrated by Prefect. This system processes a raw music dataset, engineers complex audio features, groups tracks by sonic similarity ("Vibes"), deduplicates noisy metadata, trains a sequence-aware LSTM model, and dynamically generates hyper-personalized, context-aware playlists.
 
