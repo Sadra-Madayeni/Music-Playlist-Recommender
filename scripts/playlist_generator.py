@@ -66,25 +66,43 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
         pref_vector = model(seq_tensor).numpy()[0]
         
     # --- DYNAMIC QUERY CLUSTERING USING KMEANS & SILHOUETTE SCORE ---
-    print("Applying KMeans to analyze query diversity...")
+    print("Applying PCA and KMeans to analyze query diversity...")
     from sklearn.cluster import KMeans
     from sklearn.metrics import silhouette_score
     
+    # Run PCA first so clustering matches visual density
+    pca_result = None
+    if len(scaled_query) > 2:
+        pca = PCA(n_components=2)
+        pca_result = pca.fit_transform(scaled_query)
+        clustering_input = pca_result
+    else:
+        clustering_input = scaled_query
+        
     max_possible_k = min(6, len(scaled_query) - 1)
     best_k = 1
     best_score = -1
+    scores = {}
     
     if max_possible_k >= 2:
         for k in range(2, max_possible_k + 1):
             kmeans_temp = KMeans(n_clusters=k, random_state=42, n_init=5)
-            labels = kmeans_temp.fit_predict(scaled_query)
+            labels = kmeans_temp.fit_predict(clustering_input)
             # Only consider valid silhouette scores
             if len(set(labels)) > 1:
-                score = silhouette_score(scaled_query, labels)
+                score = silhouette_score(clustering_input, labels)
+                scores[k] = score
                 if score > best_score:
                     best_score = score
                     best_k = k
                     
+        # Heuristic: favor higher K if score is within 5% of best_score to capture more nuanced vibes
+        for k in sorted(scores.keys(), reverse=True):
+            if scores[k] >= best_score * 0.95:
+                best_k = k
+                best_score = scores[k]
+                break
+                
     # If the score is very low, it implies a single monolithic cluster is better
     if best_score < 0.1 and max_possible_k >= 2:
         best_k = 1
@@ -92,13 +110,11 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
     print(f"Optimal K for user query: {best_k} (Silhouette Score: {best_score:.4f})")
     
     kmeans_final = KMeans(n_clusters=best_k, random_state=42, n_init=5)
-    query_clusters = kmeans_final.fit_predict(scaled_query)
+    query_clusters = kmeans_final.fit_predict(clustering_input)
     query_df['query_cluster'] = query_clusters
     
     # Generate PCA Plot for visualization
-    if len(scaled_query) > 2:
-        pca = PCA(n_components=2)
-        pca_result = pca.fit_transform(scaled_query)
+    if pca_result is not None:
         plt.figure(figsize=(12, 7))
         sns.scatterplot(
             x=pca_result[:, 0], 
