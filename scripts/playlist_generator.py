@@ -103,9 +103,8 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
         sns.scatterplot(
             x=pca_result[:, 0], 
             y=pca_result[:, 1], 
-            hue=query_clusters, 
-            style=query_df['track_genre'],
-            palette='viridis', 
+            hue=query_df['track_genre'], 
+            style=query_clusters,
             s=150,
             alpha=0.8
         )
