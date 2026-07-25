@@ -20,7 +20,7 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
     df = pd.read_csv(dataset_filepath)
     
     # Extract query tracks
-    query_df = df[df['track_id'].isin(query_track_ids)].copy()
+    query_df = df[df['track_id'].isin(query_track_ids)].drop_duplicates(subset=['track_id']).copy()
     
     if query_df.empty:
         print("No valid tracks found for the query.")
