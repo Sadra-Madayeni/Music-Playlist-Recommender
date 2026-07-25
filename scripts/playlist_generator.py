@@ -19,8 +19,10 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
     print("Loading dataset...")
     df = pd.read_csv(dataset_filepath)
     
-    # Extract query tracks
-    query_df = df[df['track_id'].isin(query_track_ids)].drop_duplicates(subset=['track_id']).copy()
+    # Extract query tracks PRESERVING exact chronological order and allowing repetitions
+    df_indexed = df.set_index('track_id')
+    valid_ids = [tid for tid in query_track_ids if tid in df_indexed.index]
+    query_df = df_indexed.loc[valid_ids].reset_index().copy()
     
     if query_df.empty:
         print("No valid tracks found for the query.")
@@ -30,8 +32,14 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
     output_lines.append("--- YOUR RECENTLY PLAYED QUERY ---")
     for _, row in query_df.iterrows():
         output_lines.append(f"- {row['track_name']} by {row['artists']} (Genre: {row['track_genre']})")
-    output_lines.append(f"Total Tracks in Query: {len(query_df)}")
-    output_lines.append("----------------------------------\n")
+    # Count artists and genres from the query for personalized weighting
+    from collections import Counter
+    all_query_artists = []
+    for artists_str in query_df['artists'].dropna():
+        all_query_artists.extend([x.strip() for x in artists_str.split(';')])
+    artist_counts = Counter(all_query_artists)
+    
+    query_genre_counts = query_df['track_genre'].value_counts().to_dict()
     
     feature_cols = [
         "danceability", "energy", "valence", "acousticness", 
@@ -140,18 +148,33 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
     all_features_scaled = scaler.transform(df[feature_cols].fillna(0))
     similarities = cosine_similarity([pref_vector], all_features_scaled)[0]
     
-    # Add similarities to df
+    # Add similarities to df BEFORE creating candidates
     df['similarity_score'] = similarities
-    candidates = df[~df['track_id'].isin(query_track_ids)].copy()
+    
+    # Filter candidates to exclude songs the user just played (by name and artist to catch alternate track_ids)
+    merged = df.merge(query_df[['track_name', 'artists']].drop_duplicates(), on=['track_name', 'artists'], how='left', indicator=True)
+    candidates = df[merged['_merge'] == 'left_only'].copy()
     
     # --- Generate Mixes ---
     output_lines.append("\n================ GENERATING MIXES ================\n")
     
+    # Calculate artist bonus
+    def get_artist_bonus(artists_str):
+        if pd.isna(artists_str): return 0.0
+        bonus = 0.0
+        for a in artists_str.split(';'):
+            # 0.005 bonus per listen, max 0.05 per artist
+            bonus += min(artist_counts.get(a.strip(), 0) * 0.005, 0.05)
+        return bonus
+    
+    candidates['artist_bonus'] = candidates['artists'].apply(get_artist_bonus)
+    
     # 1. General Top Recommendations (The "For You" Mix)
-    for_you = candidates.sort_values(by='similarity_score', ascending=False).head(10)
+    candidates['for_you_score'] = candidates['similarity_score'] + candidates['artist_bonus']
+    for_you = candidates.sort_values(by='for_you_score', ascending=False).drop_duplicates(subset=['track_name', 'artists']).head(10)
     output_lines.append("* The 'For You' Mix (Based on your overall session):")
     for _, row in for_you.iterrows():
-        output_lines.append(f"  - {row['track_name']} by {row['artists']} (Score: {row['similarity_score']:.2f})")
+        output_lines.append(f"  - {row['track_name']} by {row['artists']} (Score: {row['for_you_score']:.2f}, Artist Bonus: {row['artist_bonus']:.3f})")
     output_lines.append("")
     
     # 2. Dynamic Cluster Mixes
@@ -159,31 +182,120 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
     num_clusters = len(unique_clusters)
     output_lines.append(f"--- Detected {num_clusters} distinct tastes/vibes in your query ---")
     
+    genre_mixes = {}
+    
     for c_id in sorted(list(unique_clusters)):
+        if c_id == -1: continue
         cluster_tracks = query_df[query_df['query_cluster'] == c_id]
-        if c_id == -1:
-            mix_name = "The 'Eclectic / Diverse' Mix (Noise points)"
-        else:
-            # Find dominant genre of this cluster to name it
-            dominant_genre = cluster_tracks['track_genre'].mode()[0]
-            mix_name = f"The '{dominant_genre.title()} & Similar' Mix (Cluster {c_id})"
+        dominant_genre = cluster_tracks['track_genre'].mode()[0]
             
-        # Compute sub-preference by averaging features of this cluster
+        # Use LSTM to predict the next track's features for this specific vibe
         sub_features = cluster_tracks[feature_cols].fillna(0)
         sub_scaled = scaler.transform(sub_features)
-        sub_centroid = np.mean(sub_scaled, axis=0)
+        
+        if len(sub_scaled) < seq_length:
+            pad = np.zeros((seq_length - len(sub_scaled), len(feature_cols)))
+            cluster_rnn_input = np.vstack([pad, sub_scaled])
+        else:
+            cluster_rnn_input = sub_scaled[-seq_length:]
+            
+        cluster_tensor = torch.tensor([cluster_rnn_input], dtype=torch.float32)
+        with torch.no_grad():
+            sub_centroid = model(cluster_tensor).numpy()[0]
         
         # Calculate similarity to this specific centroid
         sub_sims = cosine_similarity([sub_centroid], all_features_scaled)[0]
-        # Assign only the subset that corresponds to candidates
-        candidates['sub_sim'] = sub_sims[~df['track_id'].isin(query_track_ids)]
         
-        cluster_mix = candidates.sort_values(by='sub_sim', ascending=False).head(10)
+        # Assign to candidates safely using their retained original index
+        candidates['sub_sim'] = sub_sims[candidates.index]
         
+        if 'similar_genre_1' in df.columns:
+            dom_row = cluster_tracks[cluster_tracks['track_genre'] == dominant_genre].iloc[0]
+            
+            def get_genre_weight(g_name, base_w):
+                if pd.isna(g_name): return 0.0
+                count = query_genre_counts.get(g_name, 0)
+                if count == 0:
+                    return base_w - 0.05 # Penalize heavily if the user didn't listen to this genre at all
+                else:
+                    return base_w + min(count * 0.005, 0.02) # Boost slightly if they did
+            
+            allowed = {
+                dominant_genre: 1.0,
+                dom_row.get('similar_genre_1'): get_genre_weight(dom_row.get('similar_genre_1'), 0.985),
+                dom_row.get('similar_genre_2'): get_genre_weight(dom_row.get('similar_genre_2'), 0.980),
+                dom_row.get('similar_genre_3'): get_genre_weight(dom_row.get('similar_genre_3'), 0.975)
+            }
+            allowed = {k: v for k, v in allowed.items() if pd.notna(k)}
+            
+            candidates['weight'] = candidates['track_genre'].map(allowed).fillna(0.0)
+            candidates['weighted_sim'] = (candidates['sub_sim'] * candidates['weight']) + candidates['artist_bonus']
+            valid_candidates = candidates[candidates['weight'] > 0]
+            cluster_mix = valid_candidates.sort_values(by='weighted_sim', ascending=False).drop_duplicates(subset=['track_name', 'artists']).head(10)
+        else:
+            candidates['weighted_sim'] = candidates['sub_sim'] + candidates['artist_bonus']
+            cluster_mix = candidates.sort_values(by='weighted_sim', ascending=False).drop_duplicates(subset=['track_name', 'artists']).head(10)
+            
+        if dominant_genre not in genre_mixes:
+            genre_mixes[dominant_genre] = []
+        genre_mixes[dominant_genre].append(cluster_mix)
+        
+    # Combine mixes by genre
+    for dominant_genre, mix_list in genre_mixes.items():
+        combined_mix = pd.concat(mix_list)
+        final_mix = combined_mix.sort_values(by='weighted_sim', ascending=False).drop_duplicates(subset=['track_name', 'artists']).head(10)
+        
+        mix_name = f"The '{dominant_genre.title()} & Similar' Mix"
         output_lines.append(f"\n* {mix_name}:")
-        for _, row in cluster_mix.iterrows():
-            output_lines.append(f"  - {row['track_name']} by {row['artists']} (Genre: {row['track_genre']}, Sub-Score: {row['sub_sim']:.2f})")
+        for _, row in final_mix.iterrows():
+            output_lines.append(f"  - {row['track_name']} by {row['artists']} (Genre: {row['track_genre']}, Sub-Score: {row['weighted_sim']:.2f}, Artist Bonus: {row['artist_bonus']:.3f})")
     
+    output_lines.append("")
+    
+    # 3. Dynamic Artist Mixes (For artists with 5+ plays)
+    output_lines.append(f"--- Dedicated Artist Mixes ---")
+    artist_mix_generated = False
+    
+    for artist, count in artist_counts.items():
+        if count >= 5:
+            # Get user's played tracks for this artist
+            artist_query_tracks = query_df[query_df['artists'].str.contains(artist, na=False, case=False, regex=False)]
+            if len(artist_query_tracks) == 0: continue
+                
+            # Use LSTM to predict the next track's features for this specific artist
+            artist_features = artist_query_tracks[feature_cols].fillna(0)
+            artist_scaled = scaler.transform(artist_features)
+            
+            if len(artist_scaled) < seq_length:
+                pad = np.zeros((seq_length - len(artist_scaled), len(feature_cols)))
+                artist_rnn_input = np.vstack([pad, artist_scaled])
+            else:
+                artist_rnn_input = artist_scaled[-seq_length:]
+                
+            artist_tensor = torch.tensor([artist_rnn_input], dtype=torch.float32)
+            with torch.no_grad():
+                artist_centroid = model(artist_tensor).numpy()[0]
+            
+            # Find similarity to all tracks
+            artist_sims = cosine_similarity([artist_centroid], all_features_scaled)[0]
+            
+            # Filter candidates to ONLY this artist
+            artist_candidates = df[~df['track_id'].isin(query_track_ids) & df['artists'].str.contains(artist, na=False, case=False, regex=False)].copy()
+            if len(artist_candidates) == 0: continue
+            
+            artist_candidates['sim'] = artist_sims[artist_candidates.index]
+            artist_mix = artist_candidates.sort_values(by='sim', ascending=False).drop_duplicates(subset=['track_name', 'artists']).head(10)
+            
+            if len(artist_mix) > 0:
+                artist_mix_generated = True
+                mix_name = f"The '{artist}' Mix"
+                output_lines.append(f"\n* {mix_name}:")
+                for _, row in artist_mix.iterrows():
+                    output_lines.append(f"  - {row['track_name']} by {row['artists']} (Genre: {row['track_genre']}, Sub-Score: {row['sim']:.2f})")
+    
+    if not artist_mix_generated:
+        output_lines.append("\n(No single artist had enough plays to generate a dedicated mix.)")
+        
     output_lines.append("")
 
     # Save to file

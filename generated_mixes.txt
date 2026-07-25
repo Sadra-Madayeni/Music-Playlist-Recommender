@@ -1,0 +1,111 @@
+--- YOUR RECENTLY PLAYED QUERY ---
+- (não) era amor by GIULIA BE (Genre: funk)
+- 1 Por Amor, 2 Por Dinheiro by MC Tuto;Mc Kako (Genre: funk)
+- 1.5.7 by 2T;Chris Beats Zn;Tz da Coronel;SoudCrime (Genre: funk)
+- 10 Beijos De Rua by Leo Santana (Genre: funk)
+- 2 Of Amerikaz Most Wanted (ft. Snoop Doggy Dogg) by 2Pac;Snoop Dogg (Genre: funk)
+- 2020 by MC Hariel;MARIAH;Beatriz Denaro (Genre: funk)
+- Let It Be - Remastered 2009 by The Beatles (Genre: british)
+- Let It Be - Remastered 2009 by The Beatles (Genre: british)
+- Hey Jude by The Beatles (Genre: psych-rock)
+- Yesterday - Remastered 2009 by The Beatles (Genre: british)
+- Yesterday - Remastered 2009 by The Beatles (Genre: british)
+- Let It Be - Remastered 2009 by The Beatles (Genre: british)
+- Numb by Linkin Park (Genre: grunge)
+- In the End by Linkin Park (Genre: metal)
+- Faint by Linkin Park (Genre: alternative)
+- Faint by Linkin Park (Genre: alternative)
+- Faint by Linkin Park (Genre: alternative)
+- New Divide by Linkin Park (Genre: grunge)
+- Faint by Linkin Park (Genre: alternative)
+- Crawling by Linkin Park (Genre: grunge)
+
+================ GENERATING MIXES ================
+
+* The 'For You' Mix (Based on your overall session):
+  - No More Sorrow by Linkin Park (Score: 1.01, Artist Bonus: 0.040)
+  - POWERLESS by Linkin Park (Score: 1.00, Artist Bonus: 0.040)
+  - What I've Done by Linkin Park (Score: 1.00, Artist Bonus: 0.040)
+  - Need Your Love - Live by Hillsong Young & Free (Score: 1.00, Artist Bonus: 0.000)
+  - A Place for My Head by Linkin Park (Score: 1.00, Artist Bonus: 0.040)
+  - Cristaux liquides by Pogo Car Crash Control (Score: 1.00, Artist Bonus: 0.000)
+  - Don't Look Down (feat. Usher) by Martin Garrix;Usher (Score: 1.00, Artist Bonus: 0.000)
+  - Antisocialist by Asking Alexandria (Score: 0.99, Artist Bonus: 0.000)
+  - Fingers by Lil Peep (Score: 0.99, Artist Bonus: 0.000)
+  - Runaway by Linkin Park (Score: 0.99, Artist Bonus: 0.040)
+
+--- Detected 6 distinct tastes/vibes in your query ---
+
+* The 'Funk & Similar' Mix:
+  - Bola Rebola by Tropkillaz;J Balvin;Anitta;ZAAC (Genre: funk, Sub-Score: 0.99, Artist Bonus: 0.000)
+  - Subi De Cargo by DJ Jeeh FDC;MC Meno Dani;MC Ryan GF;Yuri Redicopa (Genre: funk, Sub-Score: 0.99, Artist Bonus: 0.000)
+  - Saudade do Ex by Mc Don Juan;Luíza & Maurílio (Genre: funk, Sub-Score: 0.98, Artist Bonus: 0.000)
+  - TROPA DA MAINSTREET SO TEM MALVADAO by mc jhenny;DJ Ruan da VK;Rafael Foxx;IURY FERNANDES (Genre: funk, Sub-Score: 0.98, Artist Bonus: 0.000)
+  - Combo De Boca (Tô Mal) by Leo Santana (Genre: funk, Sub-Score: 0.98, Artist Bonus: 0.005)
+  - Para E Pensa by MC Paulin da Capital;Mumuzinho;MDB (Genre: funk, Sub-Score: 0.98, Artist Bonus: 0.000)
+  - Figurinha Repetida - Ao Vivo by Leo Santana;Lauana Prado (Genre: funk, Sub-Score: 0.98, Artist Bonus: 0.005)
+  - Riders On The Storm - Fredwreck Remix by Snoop Dogg;The Doors (Genre: funk, Sub-Score: 0.97, Artist Bonus: 0.005)
+  - Convocação by MC Koringa (Genre: funk, Sub-Score: 0.97, Artist Bonus: 0.000)
+  - Mega Funk Sento E Me Acabo by DJ Ghost Floripa (Genre: funk, Sub-Score: 0.97, Artist Bonus: 0.000)
+
+* The 'Grunge & Similar' Mix:
+  - POWERLESS by Linkin Park (Genre: metal, Sub-Score: 1.00, Artist Bonus: 0.040)
+  - By_Myslf (Josh Abraham and Mike Shinoda Reanimation) by Linkin Park (Genre: grunge, Sub-Score: 1.00, Artist Bonus: 0.040)
+  - Numb - Live at Live 8, Benjamin Franklin Parkway, Philadelphia, 2nd July 2005 by Linkin Park;JAY-Z (Genre: grunge, Sub-Score: 1.00, Artist Bonus: 0.040)
+  - Hope by Our Lady Peace (Genre: grunge, Sub-Score: 0.99, Artist Bonus: 0.000)
+  - Easier to Run by Linkin Park (Genre: grunge, Sub-Score: 0.99, Artist Bonus: 0.040)
+  - Far Away by Nickelback (Genre: grunge, Sub-Score: 0.99, Artist Bonus: 0.000)
+  - Wherever I May Roam by Metallica (Genre: metal, Sub-Score: 0.99, Artist Bonus: 0.000)
+  - The Catalyst by Linkin Park (Genre: metal, Sub-Score: 0.99, Artist Bonus: 0.040)
+  - Aurora by Foo Fighters (Genre: grunge, Sub-Score: 0.99, Artist Bonus: 0.000)
+  - What I've Done by Linkin Park (Genre: metal, Sub-Score: 0.98, Artist Bonus: 0.040)
+
+* The 'British & Similar' Mix:
+  - Yesterday - Remastered 2015 by The Beatles (Genre: british, Sub-Score: 1.03, Artist Bonus: 0.030)
+  - She's Leaving Home - Remastered 2009 by The Beatles (Genre: british, Sub-Score: 1.03, Artist Bonus: 0.030)
+  - The Fool On The Hill - Remastered 2009 by The Beatles (Genre: british, Sub-Score: 1.02, Artist Bonus: 0.030)
+  - Here, There And Everywhere - Remastered 2009 by The Beatles (Genre: british, Sub-Score: 1.02, Artist Bonus: 0.030)
+  - Let It Be - Remastered 2015 by The Beatles (Genre: british, Sub-Score: 1.01, Artist Bonus: 0.030)
+  - The Long And Winding Road - Remastered 2009 by The Beatles (Genre: british, Sub-Score: 1.01, Artist Bonus: 0.030)
+  - Because - Remastered 2009 by The Beatles (Genre: british, Sub-Score: 1.00, Artist Bonus: 0.030)
+  - The Conquest of Ireland by Gerald Barry;Joshua Bloom;Britten Sinfonia;Thomas Adès (Genre: british, Sub-Score: 0.99, Artist Bonus: 0.000)
+  - Spencer by Jonny Greenwood (Genre: british, Sub-Score: 0.99, Artist Bonus: 0.000)
+  - Say a Little Prayer - Live by Lianne La Havas (Genre: british, Sub-Score: 0.99, Artist Bonus: 0.000)
+
+* The 'Alternative & Similar' Mix:
+  - Battle Symphony by Linkin Park (Genre: alternative, Sub-Score: 0.99, Artist Bonus: 0.040)
+  - Burn It to the Ground by Nickelback (Genre: alternative, Sub-Score: 0.99, Artist Bonus: 0.000)
+  - Papercut by Linkin Park (Genre: alternative, Sub-Score: 0.99, Artist Bonus: 0.040)
+  - Lying from You by Linkin Park (Genre: alternative, Sub-Score: 0.99, Artist Bonus: 0.040)
+  - abc - The Wild Remix by GAYLE;The Wild (Genre: alternative, Sub-Score: 0.98, Artist Bonus: 0.000)
+  - abc (The Wild Remix) by GAYLE;The Wild (Genre: alternative, Sub-Score: 0.98, Artist Bonus: 0.000)
+  - Joy Ride - Night Version by The Killers (Genre: alternative, Sub-Score: 0.98, Artist Bonus: 0.000)
+  - Bleed It Out by Linkin Park (Genre: alternative, Sub-Score: 0.98, Artist Bonus: 0.040)
+  - CASTLE OF GLASS by Linkin Park (Genre: alternative, Sub-Score: 0.97, Artist Bonus: 0.040)
+  - BURN IT DOWN by Linkin Park (Genre: alternative, Sub-Score: 0.97, Artist Bonus: 0.040)
+
+--- Dedicated Artist Mixes ---
+
+* The 'The Beatles' Mix:
+  - She's Leaving Home - Remastered 2009 by The Beatles (Genre: british, Sub-Score: 1.00)
+  - Yesterday - Remastered 2015 by The Beatles (Genre: british, Sub-Score: 0.99)
+  - The Fool On The Hill - Remastered 2009 by The Beatles (Genre: british, Sub-Score: 0.99)
+  - Here, There And Everywhere - Remastered 2009 by The Beatles (Genre: british, Sub-Score: 0.98)
+  - Let It Be - Remastered 2015 by The Beatles (Genre: british, Sub-Score: 0.98)
+  - The Long And Winding Road - Remastered 2009 by The Beatles (Genre: british, Sub-Score: 0.97)
+  - While My Guitar Gently Weeps by The Beatles (Genre: british, Sub-Score: 0.95)
+  - Happiness Is A Warm Gun - Remastered 2009 by The Beatles (Genre: british, Sub-Score: 0.94)
+  - Because - Remastered 2009 by The Beatles (Genre: british, Sub-Score: 0.94)
+  - Julia - Remastered 2009 by The Beatles (Genre: british, Sub-Score: 0.91)
+
+* The 'Linkin Park' Mix:
+  - No More Sorrow by Linkin Park (Genre: metal, Sub-Score: 0.97)
+  - POWERLESS by Linkin Park (Genre: metal, Sub-Score: 0.96)
+  - What I've Done by Linkin Park (Genre: metal, Sub-Score: 0.96)
+  - A Place for My Head by Linkin Park (Genre: alternative, Sub-Score: 0.96)
+  - Runaway by Linkin Park (Genre: metal, Sub-Score: 0.95)
+  - Rebellion (feat. Daron Malakian) by Linkin Park;Daron Malakian (Genre: grunge, Sub-Score: 0.95)
+  - Numb - Live at Live 8, Benjamin Franklin Parkway, Philadelphia, 2nd July 2005 by Linkin Park;JAY-Z (Genre: grunge, Sub-Score: 0.95)
+  - Burning in the Skies by Linkin Park (Genre: metal, Sub-Score: 0.95)
+  - Final Masquerade by Linkin Park (Genre: metal, Sub-Score: 0.94)
+  - Waiting for the End by Linkin Park (Genre: metal, Sub-Score: 0.94)
