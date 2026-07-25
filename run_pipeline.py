@@ -26,6 +26,11 @@ def run_clustering(scripts_dir):
     print("Running clustering.py...")
     subprocess.run([sys.executable, os.path.join(scripts_dir, "clustering.py")], check=True)
 
+@task(name="Deduplicate Dataset")
+def run_deduplicate(scripts_dir):
+    print("Running deduplicate_dataset.py...")
+    subprocess.run([sys.executable, os.path.join(scripts_dir, "deduplicate_dataset.py")], check=True)
+
 @task(name="Train Recommender Model")
 def run_model_training(scripts_dir):
     print("Running recommender_model.py...")
@@ -48,6 +53,7 @@ def main_pipeline():
     run_preprocess(scripts_dir)
     run_feature_engineering(scripts_dir)
     run_clustering(scripts_dir)
+    run_deduplicate(scripts_dir)
     run_model_training(scripts_dir)
     run_playlist_generator(scripts_dir)
     
