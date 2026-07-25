@@ -99,11 +99,21 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
     if len(scaled_query) > 2:
         pca = PCA(n_components=2)
         pca_result = pca.fit_transform(scaled_query)
-        plt.figure(figsize=(10, 6))
-        sns.scatterplot(x=pca_result[:, 0], y=pca_result[:, 1], hue=query_clusters, palette='viridis', s=100)
+        plt.figure(figsize=(12, 7))
+        sns.scatterplot(
+            x=pca_result[:, 0], 
+            y=pca_result[:, 1], 
+            hue=query_clusters, 
+            style=query_df['track_genre'],
+            palette='viridis', 
+            s=150,
+            alpha=0.8
+        )
         plt.title("KMeans Clustering of User's Query Tracks (PCA Projection)")
         plt.xlabel("PCA Component 1")
         plt.ylabel("PCA Component 2")
+        plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', title="Clusters & Genres")
+        plt.tight_layout()
         
         plot_path = os.path.join(os.path.dirname(dataset_filepath), "query_clusters.png")
         plt.savefig(plot_path)
