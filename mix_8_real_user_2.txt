@@ -1,0 +1,92 @@
+--- YOUR RECENTLY PLAYED QUERY ---
+- Hurricane by Lin-Manuel Miranda;Original Broadway Cast of Hamilton (Genre: show-tunes)
+- For Forever by Ben Platt (Genre: show-tunes)
+- Ritual (feat. Wrabel) by Marshmello;Wrabel (Genre: progressive-house)
+- Reincarnate by Motionless In White (Genre: metalcore)
+- Late Night by ODESZA (Genre: chill)
+- Who Loves the Sun - 2015 Remaster by The Velvet Underground (Genre: psych-rock)
+- I Do Coke by Kill The Noise;Feed Me (Genre: dub)
+- Poison by Rita Ora (Genre: edm)
+- Back to the Old House - 2011 Remaster by The Smiths (Genre: punk-rock)
+- Bedshaped by Keane (Genre: piano)
+- Lost At Sea by Zedd;Ryan Tedder (Genre: techno)
+- You're All I Need by White Lion (Genre: metal)
+- Tears Don't Fall - Acoustic Version by Bullet For My Valentine (Genre: metalcore)
+- Pieces by Andrew Belle (Genre: acoustic)
+- I Choose You by Sara Bareilles (Genre: acoustic)
+- No Way Out by Bullet For My Valentine (Genre: metalcore)
+- Back In Black by AC/DC (Genre: rock)
+- Take It On the Run by REO Speedwagon (Genre: hard-rock)
+- Suite: Judy Blue Eyes - 2005 Remaster by Crosby, Stills & Nash (Genre: psych-rock)
+- Unforgettable by French Montana;Swae Lee (Genre: hip-hop)
+- Granite by Pendulum (Genre: drum-and-bass)
+- Fake It by Seether (Genre: metal)
+- Make It Bun Dem by Skrillex;Damian Marley (Genre: edm)
+- You Are the Best Thing by Ray LaMontagne (Genre: acoustic)
+- Following The Leader by Bobby Driscoll;Paul Collins (Genre: disney)
+- Children by Robert Miles (Genre: trance)
+- Human Nature by Michael Jackson (Genre: soul)
+- Ob-La-Di, Ob-La-Da - Remastered 2009 by The Beatles (Genre: psych-rock)
+- Saturday Night’s Alright (For Fighting) - Remastered 2014 by Elton John (Genre: piano)
+- Pumped Up Kicks by Foster The People (Genre: rock)
+- Love Me Do - Remastered 2009 by The Beatles (Genre: psych-rock)
+- How Did I Get Here by ODESZA (Genre: chill)
+- Angel by Aerosmith (Genre: hard-rock)
+- Prey by The Neighbourhood (Genre: alt-rock)
+
+================ GENERATING MIXES ================
+
+* The 'For You' Mix (Based on your overall session):
+  - Ball And Chain (Honky Tonk) by Mike Ness (Genre: psych-rock, Score: 1.00, Artist Bonus: 0.000)
+  - Because the Night by Patti Smith (Genre: punk-rock, Score: 0.98, Artist Bonus: 0.000)
+  - The Pot by TOOL (Genre: metal, Score: 0.98, Artist Bonus: 0.000)
+  - Helping Hand - Remastered by The Screaming Jets (Genre: alt-rock, Score: 0.97, Artist Bonus: 0.000)
+  - Reload - Radio Edit by Sebastian Ingrosso;Tommy Trash;John Martin (Genre: progressive-house, Score: 0.97, Artist Bonus: 0.000)
+  - My Kind of Woman by Mac DeMarco (Genre: edm, Score: 0.97, Artist Bonus: 0.000)
+  - Don't Stop Believin' by Journey (Genre: hard-rock, Score: 0.96, Artist Bonus: 0.000)
+  - Jerusalem by Steve Earle (Genre: alt-rock, Score: 0.96, Artist Bonus: 0.000)
+  - Azul by Zoé (Genre: alt-rock, Score: 0.96, Artist Bonus: 0.000)
+  - Christmas All Over Again by The Goo Goo Dolls (Genre: rock, Score: 0.96, Artist Bonus: 0.000)
+
+
+--- Detected 3 distinct tastes/vibes in your query ---
+
+* The 'Psych-Rock & Similar' Mix:
+  - Ball And Chain (Honky Tonk) by Mike Ness (Genre: psych-rock, Sub-Score: 0.99, Artist Bonus: 0.000)
+  - Because I’m Me by The Avalanches (Genre: psych-rock, Sub-Score: 0.94, Artist Bonus: 0.000)
+  - Don't Go Away by Grinspoon (Genre: psych-rock, Sub-Score: 0.93, Artist Bonus: 0.000)
+  - Onun Adı Hasan by Flört (Genre: psych-rock, Sub-Score: 0.93, Artist Bonus: 0.000)
+  - Doctor Doctor - 2007 Remaster by UFO (Genre: psych-rock, Sub-Score: 0.92, Artist Bonus: 0.000)
+  - Hell Hound by Sir Lord Baltimore (Genre: psych-rock, Sub-Score: 0.92, Artist Bonus: 0.000)
+  - Holding Out For You by Pond (Genre: psych-rock, Sub-Score: 0.92, Artist Bonus: 0.000)
+  - I See Red by Frenzy (Genre: psych-rock, Sub-Score: 0.91, Artist Bonus: 0.000)
+  - Oceanchild by Spidergawd (Genre: psych-rock, Sub-Score: 0.91, Artist Bonus: 0.000)
+  - Ungrateful Are the Dead by Graveyard (Genre: psych-rock, Sub-Score: 0.91, Artist Bonus: 0.000)
+
+* The 'Edm & Similar' Mix:
+  - My Kind of Woman by Mac DeMarco (Genre: edm, Sub-Score: 0.95, Artist Bonus: 0.000)
+  - Tell It To My Heart by MEDUZA;Hozier (Genre: edm, Sub-Score: 0.92, Artist Bonus: 0.000)
+  - Sun Will Shine by Robin Schulz;Tom Walker (Genre: edm, Sub-Score: 0.91, Artist Bonus: 0.000)
+  - Sun Is Shining by Axwell /\ Ingrosso;Axwell;Sebastian Ingrosso (Genre: edm, Sub-Score: 0.90, Artist Bonus: 0.000)
+  - Heroes (we could be) by Alesso;Tove Lo (Genre: edm, Sub-Score: 0.90, Artist Bonus: 0.000)
+  - Little Do You Know by BEAUZ;Jessie Villa (Genre: edm, Sub-Score: 0.89, Artist Bonus: 0.000)
+  - Runaway (U & I) by Galantis (Genre: edm, Sub-Score: 0.88, Artist Bonus: 0.000)
+  - Don’t Let Me Let Go (with ILLENIUM & EVAN GIIA) by Dillon Francis;ILLENIUM;EVAN GIIA (Genre: edm, Sub-Score: 0.88, Artist Bonus: 0.000)
+  - Don't Let Me Let Go by Dillon Francis;ILLENIUM;EVAN GIIA (Genre: edm, Sub-Score: 0.88, Artist Bonus: 0.000)
+  - Takeaway (feat. Lennon Stella) - Pilton Remix by The Chainsmokers;ILLENIUM;Lennon Stella;pilton (Genre: edm, Sub-Score: 0.88, Artist Bonus: 0.000)
+
+* The 'Acoustic & Similar' Mix:
+  - Northbound by Grace Petrie (Genre: acoustic, Sub-Score: 0.93, Artist Bonus: 0.000)
+  - White Worms by AJJ (Genre: acoustic, Sub-Score: 0.92, Artist Bonus: 0.000)
+  - Night Bus by Gabrielle Aplin (Genre: acoustic, Sub-Score: 0.90, Artist Bonus: 0.000)
+  - 君はロックを聴かない by Aimyon (Genre: acoustic, Sub-Score: 0.89, Artist Bonus: 0.000)
+  - Marigold by Aimyon (Genre: acoustic, Sub-Score: 0.89, Artist Bonus: 0.000)
+  - This One's for Johnny by Get Dead (Genre: acoustic, Sub-Score: 0.89, Artist Bonus: 0.000)
+  - To-Do Lists (Color Coded) by She/Her/hers (Genre: acoustic, Sub-Score: 0.87, Artist Bonus: 0.000)
+  - Goodbye Lulu Pt.2 by Days N Daze (Genre: acoustic, Sub-Score: 0.87, Artist Bonus: 0.000)
+  - アンダルシアに憧れて by Masayoshi Yamazaki (Genre: acoustic, Sub-Score: 0.87, Artist Bonus: 0.000)
+  - God Gave Me You by Dave Barnes (Genre: acoustic, Sub-Score: 0.86, Artist Bonus: 0.000)
+
+--- Dedicated Artist Mixes ---
+
+(No single artist had enough plays to generate a dedicated mix.)

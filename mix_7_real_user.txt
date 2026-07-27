@@ -1,0 +1,62 @@
+--- YOUR RECENTLY PLAYED QUERY ---
+- Hate Me Now (feat. Diddy) by Nas;Diddy (Genre: hardcore)
+- Already Over by Red (Genre: grunge)
+- Brick By Brick by Arctic Monkeys (Genre: garage)
+- The Thrill Is Gone by B.B. King;Eric Clapton (Genre: blues)
+- Shape of You by Ed Sheeran (Genre: pop)
+- True Colors by Cyndi Lauper (Genre: disco)
+- Replay by Iyaz (Genre: dance)
+- So Far Away by Staind (Genre: grunge)
+- Hells Bells by AC/DC (Genre: hard-rock)
+- Dying in Your Arms by Trivium (Genre: metalcore)
+- Hangin' Downtown by Cameo (Genre: disco)
+- Your Love by The Outfield (Genre: power-pop)
+- Can't Keep It Inside by Brett Dennen;Benedict Cumberbatch (Genre: acoustic)
+- LIES GREED MISERY by Linkin Park (Genre: metal)
+- Honor To Us All by Lea Salonga;Beth Fowler;Marni Nixon;Chorus - Mulan;Disney (Genre: show-tunes)
+- Unwell by Matchbox Twenty (Genre: grunge)
+- Maldito duende by Heroes Del Silencio (Genre: spanish)
+- 99 Problems by Hugo (Genre: folk)
+- Fractures by ILLENIUM;Nevve (Genre: dubstep)
+- Where Are Ü Now (with Justin Bieber) by Jack Ü;Skrillex;Diplo;Justin Bieber (Genre: edm)
+- Feel Good Inc. by Gorillaz (Genre: alternative)
+- Feels Like Home by Chantal Kreviazuk (Genre: piano)
+- Awake My Soul by Chris Tomlin;Lecrae (Genre: world-music)
+- Open Wide (feat. Big Sean) by Calvin Harris;Big Sean (Genre: progressive-house)
+- Only A Fool Would Say That by Steely Dan (Genre: psych-rock)
+- Wait by Earshot (Genre: industrial)
+- Human Fly by The Cramps (Genre: goth)
+- Julia - Remastered 2009 by The Beatles (Genre: british)
+
+================ GENERATING MIXES ================
+
+* The 'For You' Mix (Based on your overall session):
+  - Ten Million Voices by Shaman's Harvest (Genre: grunge, Score: 0.99, Artist Bonus: 0.000)
+  - Lydia by Highly Suspect (Genre: grunge, Score: 0.98, Artist Bonus: 0.000)
+  - Bullet With Butterfly Wings - Remastered 2012 by The Smashing Pumpkins (Genre: grunge, Score: 0.98, Artist Bonus: 0.000)
+  - Ball And Chain (Honky Tonk) by Mike Ness (Genre: psych-rock, Score: 0.98, Artist Bonus: 0.000)
+  - 2018 by The Spits (Genre: garage, Score: 0.98, Artist Bonus: 0.000)
+  - Frances Farmer Will Have Her Revenge On Seattle by Nirvana (Genre: grunge, Score: 0.98, Artist Bonus: 0.000)
+  - Från där jag ropar by Hästpojken (Genre: goth, Score: 0.98, Artist Bonus: 0.000)
+  - Please Don't Go by KC & The Sunshine Band (Genre: disco, Score: 0.98, Artist Bonus: 0.000)
+  - Quién lo diría by Vanesa Martín (Genre: spanish, Score: 0.98, Artist Bonus: 0.000)
+  - 3AM by Matchbox Twenty (Genre: grunge, Score: 0.97, Artist Bonus: 0.005)
+
+
+--- Detected 1 distinct tastes/vibes in your query ---
+
+* The 'Grunge & Similar' Mix:
+  - Ten Million Voices by Shaman's Harvest (Genre: grunge, Sub-Score: 0.98, Artist Bonus: 0.000)
+  - Lydia by Highly Suspect (Genre: grunge, Sub-Score: 0.97, Artist Bonus: 0.000)
+  - Bullet With Butterfly Wings - Remastered 2012 by The Smashing Pumpkins (Genre: grunge, Sub-Score: 0.97, Artist Bonus: 0.000)
+  - Frances Farmer Will Have Her Revenge On Seattle by Nirvana (Genre: grunge, Sub-Score: 0.96, Artist Bonus: 0.000)
+  - 3AM by Matchbox Twenty (Genre: grunge, Sub-Score: 0.95, Artist Bonus: 0.005)
+  - The Pot by TOOL (Genre: metal, Sub-Score: 0.95, Artist Bonus: 0.000)
+  - Awake by Godsmack (Genre: grunge, Sub-Score: 0.95, Artist Bonus: 0.000)
+  - Shimmer by Fuel (Genre: grunge, Sub-Score: 0.95, Artist Bonus: 0.000)
+  - Dive by Nirvana (Genre: grunge, Sub-Score: 0.94, Artist Bonus: 0.000)
+  - Suicidal Dream by Silverchair (Genre: grunge, Sub-Score: 0.94, Artist Bonus: 0.000)
+
+--- Dedicated Artist Mixes ---
+
+(No single artist had enough plays to generate a dedicated mix.)
