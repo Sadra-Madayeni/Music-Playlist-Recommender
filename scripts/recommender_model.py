@@ -41,21 +41,48 @@ class SessionRecommenderLSTM(nn.Module):
         return out
 
 def create_sequences(df, feature_cols, seq_length=5):
-    # Simulate user sessions by creating rolling windows of tracks
-    # Since we don't have explicit user IDs, we'll just treat contiguous blocks as sessions
-    data = df[feature_cols].values
+    # Load the real human playlists
+    print(f"Loading cleaned_playlists.csv...")
+    playlists = pd.read_csv("cleaned_playlists.csv")
+    
+    # df currently contains 'track_id' and the scaled features
+    print("Merging playlist tracks with their scaled acoustic features...")
+    # Map track_id to features
+    feature_map = df.set_index("track_id")[feature_cols].values
+    track_to_idx = {track_id: i for i, track_id in enumerate(df["track_id"].values)}
+    
+    # We will build sequences directly to avoid massive dataframe merges in memory
     sequences = []
     targets = []
     
-    print(f"Creating sequences of length {seq_length}...")
-    for i in tqdm(range(len(data) - seq_length)):
-        seq = data[i:i+seq_length]
-        target = data[i+seq_length]
-        sequences.append(seq)
-        targets.append(target)
+    # Group by playlist_id
+    grouped = playlists.groupby('playlist_id')
+    
+    print(f"Creating organic human sequences of length {seq_length}...")
+    
+    # Fast iteration
+    for pid, group in tqdm(grouped):
+        track_ids = group['track_id'].values
+        # Get feature arrays for the tracks in this playlist
+        # Filter out tracks that somehow don't exist in track_to_idx (should be rare)
+        valid_indices = [track_to_idx[tid] for tid in track_ids if tid in track_to_idx]
         
-        # Subsample to avoid massive dataset for local training (just take 20,000 sequences for fast local demo)
-        if len(sequences) >= 20000:
+        if len(valid_indices) <= seq_length:
+            continue
+            
+        playlist_features = feature_map[valid_indices]
+        
+        # Slide window
+        for i in range(len(playlist_features) - seq_length):
+            seq = playlist_features[i:i+seq_length]
+            target = playlist_features[i+seq_length]
+            sequences.append(seq)
+            targets.append(target)
+            
+            if len(sequences) >= 40000: # Increased cap since we have real data
+                break
+        
+        if len(sequences) >= 40000:
             break
             
     return np.array(sequences), np.array(targets)
@@ -86,7 +113,10 @@ def train_model(data_filepath, model_out_path, epochs=10, batch_size=64, lr=0.00
         os.makedirs(os.path.dirname(scaler_path), exist_ok=True)
         joblib.dump({"scaler": scaler}, scaler_path) # Temp save if clustering didn't run
 
-    sequences, targets = create_sequences(df_scaled, feature_cols, seq_length=10)
+    # Preserve track_id for the merge
+    df_scaled['track_id'] = df['track_id'].values
+
+    sequences, targets = create_sequences(df_scaled, feature_cols, seq_length=5)
     
     dataset = MusicSequenceDataset(sequences, targets)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)

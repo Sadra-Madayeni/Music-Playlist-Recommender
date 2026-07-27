@@ -59,8 +59,8 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
     query_features = query_df[feature_cols].fillna(0)
     scaled_query = scaler.transform(query_features)
     
-    # Pad or truncate to seq_length of 10 for the general RNN prediction
-    seq_length = 10
+    # Pad or truncate to seq_length of 5 for the general RNN prediction
+    seq_length = 5
     if len(scaled_query) < seq_length:
         pad = np.zeros((seq_length - len(scaled_query), len(feature_cols)))
         rnn_input = np.vstack([pad, scaled_query])
@@ -209,7 +209,7 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
                 if pd.isna(g_name): return 0.0
                 count = query_genre_counts.get(g_name, 0)
                 if count == 0:
-                    return base_w - 0.05 # Penalize heavily if the user didn't listen to this genre at all
+                    return base_w - 0.15 # Penalize heavily if the user didn't listen to this genre at all
                 else:
                     return base_w + min(count * 0.005, 0.02) # Boost slightly if they did
             

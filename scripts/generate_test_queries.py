@@ -3,6 +3,7 @@ import os
 import shutil
 import subprocess
 import sys
+import random
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, ".."))
@@ -61,6 +62,29 @@ queries = {
     "4_lstm_recency": q4,
     "5_deduplication": q5
 }
+
+# Feature 6: Realistic Diverse Subgenres
+rock_family = ['rock', 'alt-rock', 'hard-rock', 'psych-rock', 'punk', 'grunge', 'metal', 'heavy-metal']
+pop_family = ['pop', 'k-pop', 'mandopop', 'indie-pop', 'synth-pop', 'dance']
+electronic_family = ['edm', 'techno', 'house', 'trance', 'dubstep', 'electronic', 'electro']
+
+def sample_tracks(genres, n_total):
+    tracks = []
+    n_per_genre = max(1, n_total // len(genres))
+    for g in genres:
+        g_tracks = df[df['track_genre'] == g]['track_id'].tolist()
+        if not g_tracks: continue
+        sampled = random.sample(g_tracks, min(n_per_genre, len(g_tracks)))
+        tracks.extend(sampled)
+    while len(tracks) < n_total:
+        g = random.choice(genres)
+        g_tracks = df[df['track_genre'] == g]['track_id'].tolist()
+        if g_tracks: tracks.append(random.choice(g_tracks))
+    return tracks[:n_total]
+
+q6 = sample_tracks(rock_family, 20) + sample_tracks(pop_family, 15) + sample_tracks(electronic_family, 15)
+random.shuffle(q6)
+queries["6_realistic_diverse_genres"] = q6
 
 query_file_path = os.path.join(PROJECT_ROOT, "query.txt")
 mix_file_path = os.path.join(PROJECT_ROOT, "generated_mixes.txt")

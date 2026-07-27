@@ -53,31 +53,31 @@
 ================ GENERATING MIXES ================
 
 * The 'For You' Mix (Based on your overall session):
-  - Saka Saka Saka by MC Mazzie;DJ NpcSize;DJ Wizard (Genre: funk, Score: 1.04, Artist Bonus: 0.000)
-  - Bolo Um by MC Neguinho do Kaxeta (Genre: funk, Score: 1.04, Artist Bonus: 0.005)
-  - Ele Te Bota Soca Soca by MC Mazzie;Mc Rd;DJ NpcSize;DJ Wizard (Genre: funk, Score: 1.04, Artist Bonus: 0.000)
-  - Mega Funk Reload Vuk Vuk by DJ Ghost Floripa (Genre: funk, Score: 1.04, Artist Bonus: 0.000)
-  - Forgot About Dre by Dr. Dre;Eminem (Genre: funk, Score: 1.03, Artist Bonus: 0.010)
-  - Socadona - Funk Remix by LUDMILLA;DJ Will22;Topo La Maskara;Mariah Angeliq;Mr. Vegas (Genre: funk, Score: 1.03, Artist Bonus: 0.000)
-  - Sweat - Remix by Snoop Dogg;David Guetta;Giorgio Tuinfort;Frederic Riesterer (Genre: funk, Score: 1.03, Artist Bonus: 0.000)
-  - MEGA FUNK - SIMPLESMENTE ELA by DJ Bratti SC (Genre: funk, Score: 1.02, Artist Bonus: 0.005)
-  - Be the One by Rudimental;MORGAN;Digga D;TIKE (Genre: funk, Score: 1.02, Artist Bonus: 0.000)
-  - Século XXI by Mc Davi;MC Hariel (Genre: funk, Score: 1.02, Artist Bonus: 0.010)
+  - Kush - Main by Dr. Dre;Snoop Dogg;Akon (Genre: funk, Score: 0.95, Artist Bonus: 0.005)
+  - Young, Wild & Free (feat. Bruno Mars) by Snoop Dogg;Wiz Khalifa;Bruno Mars (Genre: funk, Score: 0.92, Artist Bonus: 0.000)
+  - Laal Ishq by Arijit Singh (Genre: pop-film, Score: 0.88, Artist Bonus: 0.000)
+  - The Price Went Up by JANE HANDCOCK;Snoop Dogg (Genre: funk, Score: 0.88, Artist Bonus: 0.000)
+  - Ten Million Voices by Shaman's Harvest (Genre: grunge, Score: 0.88, Artist Bonus: 0.000)
+  - Ball And Chain (Honky Tonk) by Mike Ness (Genre: psych-rock, Score: 0.87, Artist Bonus: 0.000)
+  - Samba Makossa by Chico Science;Nação Zumbi (Genre: r-n-b, Score: 0.87, Artist Bonus: 0.000)
+  - 2018 by The Spits (Genre: garage, Score: 0.87, Artist Bonus: 0.000)
+  - La Chíqui by Arca;SOPHIE (Genre: club, Score: 0.87, Artist Bonus: 0.000)
+  - Från där jag ropar by Hästpojken (Genre: goth, Score: 0.87, Artist Bonus: 0.000)
 
 
 --- Detected 1 distinct tastes/vibes in your query ---
 
 * The 'Funk & Similar' Mix:
-  - Saka Saka Saka by MC Mazzie;DJ NpcSize;DJ Wizard (Genre: funk, Sub-Score: 0.99, Artist Bonus: 0.000)
-  - Bolo Um by MC Neguinho do Kaxeta (Genre: funk, Sub-Score: 0.99, Artist Bonus: 0.005)
-  - Ele Te Bota Soca Soca by MC Mazzie;Mc Rd;DJ NpcSize;DJ Wizard (Genre: funk, Sub-Score: 0.99, Artist Bonus: 0.000)
-  - Mega Funk Reload Vuk Vuk by DJ Ghost Floripa (Genre: funk, Sub-Score: 0.99, Artist Bonus: 0.000)
-  - Forgot About Dre by Dr. Dre;Eminem (Genre: funk, Sub-Score: 0.98, Artist Bonus: 0.010)
-  - Socadona - Funk Remix by LUDMILLA;DJ Will22;Topo La Maskara;Mariah Angeliq;Mr. Vegas (Genre: funk, Sub-Score: 0.98, Artist Bonus: 0.000)
-  - Sweat - Remix by Snoop Dogg;David Guetta;Giorgio Tuinfort;Frederic Riesterer (Genre: funk, Sub-Score: 0.98, Artist Bonus: 0.000)
-  - MEGA FUNK - SIMPLESMENTE ELA by DJ Bratti SC (Genre: funk, Sub-Score: 0.97, Artist Bonus: 0.005)
-  - Be the One by Rudimental;MORGAN;Digga D;TIKE (Genre: funk, Sub-Score: 0.97, Artist Bonus: 0.000)
-  - Século XXI by Mc Davi;MC Hariel (Genre: funk, Sub-Score: 0.97, Artist Bonus: 0.010)
+  - Kush - Main by Dr. Dre;Snoop Dogg;Akon (Genre: funk, Sub-Score: 0.90, Artist Bonus: 0.005)
+  - Young, Wild & Free (feat. Bruno Mars) by Snoop Dogg;Wiz Khalifa;Bruno Mars (Genre: funk, Sub-Score: 0.87, Artist Bonus: 0.000)
+  - The Price Went Up by JANE HANDCOCK;Snoop Dogg (Genre: funk, Sub-Score: 0.83, Artist Bonus: 0.000)
+  - Good Boy Gone Bad by TOMORROW X TOGETHER (Genre: k-pop, Sub-Score: 0.80, Artist Bonus: 0.000)
+  - Dior by Vulgo FK;Pedro Lotto;Wall Hein (Genre: funk, Sub-Score: 0.77, Artist Bonus: 0.005)
+  - Life Goes On by BTS (Genre: k-pop, Sub-Score: 0.76, Artist Bonus: 0.000)
+  - Lie by BTS (Genre: k-pop, Sub-Score: 0.76, Artist Bonus: 0.000)
+  - Street Style by JERRY (Genre: pop, Sub-Score: 0.75, Artist Bonus: 0.000)
+  - Ready For Love by BLACKPINK (Genre: k-pop, Sub-Score: 0.74, Artist Bonus: 0.000)
+  - Steal My Girl by One Direction (Genre: pop, Sub-Score: 0.74, Artist Bonus: 0.000)
 
 --- Dedicated Artist Mixes ---
 
