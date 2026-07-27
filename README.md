@@ -48,13 +48,41 @@ To execute the entire data science orchestrator (from database configuration to 
 ```bash
 python run_pipeline.py
 ```
+*Note: This pipeline is fully orchestrated by Prefect.*
 
-### Step 4: Generate a Custom Query (Optional)
-Use the helper script to create random realistic listening sessions:
+### Step 4: Generate Custom Test Queries
+To test the engine's reaction to different sequences, use the automated test generator which runs 6 distinct stress-test scenarios:
 ```bash
-python scripts/generate_query.py
+python scripts/generate_test_queries.py
 ```
-You can manually edit `query.txt` to test the engine's reaction to different sequences, repetitions, and genres.
 
 ### Step 5: View Results
 Final personalized playlists are output directly to `generated_mixes.txt`.
+
+---
+
+## Observability & Dashboards
+
+This project integrates modern MLOps tracking tools:
+
+### MLFlow (Neural Network Tracking)
+The PyTorch LSTM automatically logs all hyperparameters, training metrics, and model `.pth` artifacts to a local SQLite database (`mlflow.db`). To view the dashboard:
+```bash
+mlflow ui
+```
+Navigate to `http://localhost:5000` and click on the **Music_Session_Recommender** experiment.
+
+### Prefect (Pipeline Orchestration)
+The entire pipeline is wrapped in Prefect `@task` and `@flow` decorators for automatic retries, error handling, and scheduling. To view the flow dashboard:
+```bash
+prefect server start
+```
+Navigate to `http://localhost:4200` to view pipeline execution graphs.
+
+---
+
+## Deployment (CI/CD & Kubernetes)
+
+* **Docker**: The pipeline is fully containerized. Build it with `docker build -t data-pipeline-image:latest .` and run it locally with `docker run data-pipeline-image:latest`.
+* **Kubernetes**: A standard `deployment.yml` is provided to spin up replica pods of the data pipeline on any K8s cluster (`kubectl apply -f deployment.yml`).
+* **CI/CD**: A GitHub Actions workflow (`.github/workflows/ci.yml`) is configured to automatically install dependencies and run the regression test suite (`generate_test_queries.py`) on every push to the `main` branch.
