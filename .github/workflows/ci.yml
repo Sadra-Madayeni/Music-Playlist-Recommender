@@ -16,6 +16,8 @@ jobs:
           python-version: '3.12'
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Clean existing databases
+        run: rm -f mlflow.db database/dataset.db
       - name: Run Pipeline
         run: python run_pipeline.py
       - name: Run Regression Tests
