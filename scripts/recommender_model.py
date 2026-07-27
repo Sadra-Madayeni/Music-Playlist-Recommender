@@ -86,7 +86,7 @@ def train_model(data_filepath, model_out_path, epochs=10, batch_size=64, lr=0.00
         os.makedirs(os.path.dirname(scaler_path), exist_ok=True)
         joblib.dump({"scaler": scaler}, scaler_path) # Temp save if clustering didn't run
 
-    sequences, targets = create_sequences(df_scaled, feature_cols, seq_length=5)
+    sequences, targets = create_sequences(df_scaled, feature_cols, seq_length=10)
     
     dataset = MusicSequenceDataset(sequences, targets)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)

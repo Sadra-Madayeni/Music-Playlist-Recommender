@@ -59,8 +59,8 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
     query_features = query_df[feature_cols].fillna(0)
     scaled_query = scaler.transform(query_features)
     
-    # Pad or truncate to seq_length of 5 for the general RNN prediction
-    seq_length = 5
+    # Pad or truncate to seq_length of 10 for the general RNN prediction
+    seq_length = 10
     if len(scaled_query) < seq_length:
         pad = np.zeros((seq_length - len(scaled_query), len(feature_cols)))
         rnn_input = np.vstack([pad, scaled_query])
@@ -73,10 +73,9 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
     with torch.no_grad():
         pref_vector = model(seq_tensor).numpy()[0]
         
-    # --- DYNAMIC QUERY CLUSTERING USING KMEANS & SILHOUETTE SCORE ---
-    print("Applying PCA and KMeans to analyze query diversity...")
+    # --- METADATA-DRIVEN QUERY CLUSTERING USING KMEANS ---
+    print("Applying PCA and metadata-driven KMeans to analyze query diversity...")
     from sklearn.cluster import KMeans
-    from sklearn.metrics import silhouette_score
     
     # Run PCA first so clustering matches visual density
     pca_result = None
@@ -87,43 +86,30 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
     else:
         clustering_input = scaled_query
         
-    max_possible_k = min(6, len(scaled_query) - 1)
-    best_k = 1
-    best_score = -1
-    scores = {}
+    # Analyze cultural metadata to determine exact K
+    genre_counts = query_df['track_genre'].value_counts()
     
-    if max_possible_k >= 2:
-        for k in range(2, max_possible_k + 1):
-            kmeans_temp = KMeans(n_clusters=k, random_state=42, n_init=5)
-            labels = kmeans_temp.fit_predict(clustering_input)
-            # Only consider valid silhouette scores
-            if len(set(labels)) > 1:
-                score = silhouette_score(clustering_input, labels)
-                scores[k] = score
-                if score > best_score:
-                    best_score = score
-                    best_k = k
-                    
-        # Heuristic: favor higher K if score is within 5% of best_score to capture more nuanced vibes
-        for k in sorted(scores.keys(), reverse=True):
-            if scores[k] >= best_score * 0.95:
-                best_k = k
-                best_score = scores[k]
-                break
-                
-    # If the score is very low, it implies a single monolithic cluster is better
-    if best_score < 0.1 and max_possible_k >= 2:
-        best_k = 1
-        
-    print(f"Optimal K for user query: {best_k} (Silhouette Score: {best_score:.4f})")
+    # Define a "main genre" as any genre that makes up at least 5% of the query (minimum 3 tracks)
+    min_tracks = max(3, int(len(query_df) * 0.05))
+    main_genres = genre_counts[genre_counts >= min_tracks]
+    
+    # Set K explicitly to the number of main genres found!
+    dynamic_k = len(main_genres)
+    
+    # Bound K to avoid fragmentation or breaking KMeans
+    best_k = max(1, min(dynamic_k, 6, len(scaled_query) - 1))
+    
+    print(f"Detected {len(main_genres)} main genres (>= {min_tracks} tracks). Setting K={best_k}.")
     
     kmeans_final = KMeans(n_clusters=best_k, random_state=42, n_init=5)
     query_clusters = kmeans_final.fit_predict(clustering_input)
+        
     query_df['query_cluster'] = query_clusters
     
     # Generate PCA Plot for visualization
     if pca_result is not None:
         plt.figure(figsize=(12, 7))
+        
         sns.scatterplot(
             x=pca_result[:, 0], 
             y=pca_result[:, 1], 
@@ -132,7 +118,7 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
             s=150,
             alpha=0.8
         )
-        plt.title("KMeans Clustering of User's Query Tracks (PCA Projection)")
+        plt.title(f"Metadata-Driven KMeans Clustering (K={best_k})")
         plt.xlabel("PCA Component 1")
         plt.ylabel("PCA Component 2")
         plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', title="Clusters & Genres")
@@ -170,17 +156,24 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
     candidates['artist_bonus'] = candidates['artists'].apply(get_artist_bonus)
     
     # 1. General Top Recommendations (The "For You" Mix)
-    candidates['for_you_score'] = candidates['similarity_score'] + candidates['artist_bonus']
+    def get_for_you_genre_bonus(g_name):
+        if pd.isna(g_name): return -0.10
+        count = query_genre_counts.get(g_name, 0)
+        if count == 0:
+            return -0.10 # Heavy penalty for random genres not in query
+        else:
+            return min(count * 0.005, 0.05) # Boost slightly if they did listen to it
+            
+    candidates['genre_bonus'] = candidates['track_genre'].apply(get_for_you_genre_bonus)
+    candidates['for_you_score'] = candidates['similarity_score'] + candidates['artist_bonus'] + candidates['genre_bonus']
     for_you = candidates.sort_values(by='for_you_score', ascending=False).drop_duplicates(subset=['track_name', 'artists']).head(10)
     output_lines.append("* The 'For You' Mix (Based on your overall session):")
     for _, row in for_you.iterrows():
-        output_lines.append(f"  - {row['track_name']} by {row['artists']} (Score: {row['for_you_score']:.2f}, Artist Bonus: {row['artist_bonus']:.3f})")
+        output_lines.append(f"  - {row['track_name']} by {row['artists']} (Genre: {row['track_genre']}, Score: {row['for_you_score']:.2f}, Artist Bonus: {row['artist_bonus']:.3f})")
     output_lines.append("")
     
     # 2. Dynamic Cluster Mixes
     unique_clusters = set(query_clusters)
-    num_clusters = len(unique_clusters)
-    output_lines.append(f"--- Detected {num_clusters} distinct tastes/vibes in your query ---")
     
     genre_mixes = {}
     
@@ -241,6 +234,8 @@ def generate_mixes(query_track_ids, dataset_filepath, model_filepath, scaler_fil
         genre_mixes[dominant_genre].append(cluster_mix)
         
     # Combine mixes by genre
+    actual_num_vibes = len(genre_mixes)
+    output_lines.append(f"\n--- Detected {actual_num_vibes} distinct tastes/vibes in your query ---")
     for dominant_genre, mix_list in genre_mixes.items():
         combined_mix = pd.concat(mix_list)
         final_mix = combined_mix.sort_values(by='weighted_sim', ascending=False).drop_duplicates(subset=['track_name', 'artists']).head(10)
